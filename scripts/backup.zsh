@@ -23,6 +23,8 @@ last_change_timestamp=$(cat "$timestamp_file")
 # Get path of current desktop wallpaper using osascript
 wallpaper_path=$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)' 2>/dev/null)
 
+backup_directory="/Users/brandoncard/New-Setup/"
+
 if [ -z "$wallpaper_path" ]; then
     echo "No wallpaper change detected."
 else
@@ -32,13 +34,13 @@ else
 
     # Check if wallpaper has been changed recently
     if [ "$last_change_timestamp" != "$current_timestamp" ]; then
+        # Copy orginal file to repo
+        cp "$wallpaper_path" "$backup_directory"
+
         # Rename the wallpaper to Desktop.png
-        new_wallpaper_path=$(dirname "$wallpaper_path")/Desktop.png
-        mv "$wallpaper_path" "$new_wallpaper_path"
-
-        # Copy the renamed desktop wallpaper to your backup repository
-        cp "$new_wallpaper_path" "/Users/brandoncard/New-Machine/"
-
+        new_wallpaper_path=$backup_directory/Desktop.png
+        mv "$backup_directory/$(basename $wallpaper_path)" "$new_wallpaper_path"
+        
         # Update timestamp of last wallpaper change
         echo "$current_timestamp" > "$timestamp_file"
 
@@ -55,6 +57,8 @@ else
 fi
 
 # Update brew formulas and casks
+/opt/homebrew/bin/brew update
+/opt/homebrew/bin/brew upgrade
 /opt/homebrew/bin/brew upgrade --cask --greedy
 
 # Brew cleanup

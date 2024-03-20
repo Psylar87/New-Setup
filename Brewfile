@@ -12,6 +12,8 @@ brew "automake"
 brew "openssl@3"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Bash scripts that integrate bat with various command-line tools
+brew "bat-extras"
 # Parser generator
 brew "bison"
 # Library for command-line editing
@@ -36,6 +38,8 @@ brew "gh"
 brew "gifski"
 # Distributed revision control system
 brew "git"
+# Improved top (interactive process viewer)
+brew "htop"
 # Portable Foreign Function Interface library
 brew "libffi"
 # YAML Parser

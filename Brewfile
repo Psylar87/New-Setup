@@ -54,6 +54,8 @@ brew "neovim"
 brew "pngquant"
 # Theme for zsh
 brew "powerlevel10k"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
 # Prints a steam locomotive if you type sl instead of ls
@@ -82,6 +84,8 @@ cask "keyclu"
 cask "latest"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# Tool that provides consistent, highly configurable symbols for apps
+cask "sf-symbols"
 # Team communication and collaboration software
 cask "slack"
 # Enable Windows-like program quitting when all windows are closed
@@ -90,18 +94,3 @@ cask "swift-quit"
 cask "warp"
 # Multiplayer code editor
 cask "zed"
-mas "1Blocker", id: 1365531024
-mas "1Password for Safari", id: 1569813296
-mas "Amphetamine", id: 937984704
-mas "Bakery", id: 1575220747
-mas "CloudMounter", id: 1130254674
-mas "Craft", id: 1487937127
-mas "Hush", id: 1544743900
-mas "Ice Cubes", id: 6444915884
-mas "Messenger", id: 1480068668
-mas "Refined GitHub", id: 1519867270
-mas "Telegram", id: 747648890
-mas "TestFlight", id: 899247664
-mas "The Unarchiver", id: 425424353
-mas "Transmit", id: 1436522307
-mas "Xcode", id: 497799835

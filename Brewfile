@@ -2,6 +2,7 @@ tap "dracula/install"
 tap "enigmaticdb/super-secret-tap"
 tap "finnvoor/tools"
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
 # General-purpose data compression with high compression ratio
@@ -58,6 +59,8 @@ brew "powerlevel10k"
 brew "ripgrep"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
 brew "ruby-install"
+# Rust toolchain installer
+brew "rustup-init"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -74,6 +77,8 @@ cask "dracula-xcode"
 cask "dropzone"
 # Web browser
 cask "firefox"
+# Developer targeted fonts with a high number of glyphs
+cask "font-jetbrains-mono-nerd-font"
 # Web browser
 cask "google-chrome"
 # Keyboard customiser

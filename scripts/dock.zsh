@@ -28,8 +28,8 @@ dockutil --add  /Applications/Spotify.app --position 3 --no-restart
 dockutil --add  /System/Applications/Messages.app --position 4 --no-restart
 dockutil --add  /Applications/Messenger.app --position 5 --no-restart
 dockutil --add  /Applications/Telegram.app --position 6 --no-restart
-dockutil --add  /Applications/Ice\ Cubes.app --position 7 --no-restart
-dockutil --add  /Applications/Obsidian.app --position 8 --no-restart
+dockutil --add  /Applications/Obsidian.app --position 7 --no-restart
+dockutil --add  /Applications/Ice\ Cubes.app --position 8 --no-restart
 dockutil --add  /Applications/Xcode.app --position 9 --no-restart
 dockutil --add  /Applications/Visual\ Studio\ Code.app --position 10 --no-restart
 dockutil --add  /Applications/Linear.app --position 11 --no-restart

@@ -1,4 +1,4 @@
-# Stolen from [MillerApps](https://github.com/MillerApps/New-Machine)
+# Stolen from MillerApps
 
 # New Machine Setup
 > Note: For anyone suggesting to use Ansible, this setup works for my needs. I don't require all the options provided by Ansible, nor do I want to do the extra setup.
@@ -6,7 +6,17 @@
 Steps to make a new machine easier to setup
 
 ## Sign into iCloud and enable documents to be synced.
+## Clone this repo
+
 ## Run the script found in the script folder, or follow the manual process below.
+
+1. cd to the script directory.
+2. Make sure make the script executable with `chmod u+x setup-machine.zsh` then run it with `./setup-machine.zsh`
+3. Make sure that the `dock.zsh` script is executable with `chmod u+x dock.zsh`
+
+4. The same can be for the backup script `chmod u+x backup.zsh`
+   Then with the backup script you add it as a cron job.
+   
 ## Insatll HomeBrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 

@@ -30,6 +30,9 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false && kill
 # Set to dark mode
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
+# Set up the dock
+sh $(dirname "$0")/dock.zsh
+
 # Get the absolute path to the image
 IMAGE_PATH="${HOME}/New-Machine/Desktop.png"
 

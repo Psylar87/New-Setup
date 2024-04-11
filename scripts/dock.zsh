@@ -9,7 +9,7 @@ defaults write com.apple.dock "tilesize" -int "40"
 defaults write com.apple.dock "show-recents" -bool "false"
 
 # check if dockutil is installed
-# this should be installed via homebrew durning 
+# this should be installed via homebrew during 
 # the setup-machine script. Which will also call this script.
 if ! command -v dockutil &> /dev/null
 then

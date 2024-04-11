@@ -3,6 +3,7 @@ tap "enigmaticdb/super-secret-tap"
 tap "finnvoor/tools"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+tap "jesseduffield/lazygit"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
 # General-purpose data compression with high compression ratio
@@ -27,6 +28,8 @@ brew "libnghttp2"
 brew "cask"
 # Ruby environment tool
 brew "chruby"
+# Tool for managing dock items
+brew "dockutil"
 # Modern, maintained replacement for ls
 brew "eza"
 # Play, record, convert, and stream audio and video
@@ -73,8 +76,20 @@ brew "speedtest-cli"
 brew "finnvoor/tools/fx-upscale"
 # Command-line interface for 1Password
 cask "1password-cli"
+# Chromium based browser
+cask "arc"
+# Menu bar icon organiser
+cask "bartender"
+# Mounts cloud storages as local discs
+cask "cloudmounter"
 # The Homebrew Companion
 cask "cork"
+# Native document editor
+cask "craft"
+# Voice and text chat software
+cask "discord"
+# App to build and share containerised applications and microservices
+cask "docker"
 # Dark theme for Xcode
 cask "dracula-xcode"
 # Productivity app
@@ -83,8 +98,16 @@ cask "dropzone"
 cask "firefox"
 # Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
+# Superfamily of fonts for code
+cask "font-monaspace"
+# Developer targeted fonts with a high number of glyphs
+cask "font-monaspace-nerd-font"
 # Web browser
 cask "google-chrome"
+# Tools to protect your emails and files
+cask "gpg-suite"
+# Block nags to accept cookies and privacy invasive tracking in Safari
+cask "hush"
 # Keyboard customiser
 cask "karabiner-elements"
 # Find shortcuts for any installed application
@@ -93,17 +116,35 @@ cask "keyclu"
 cask "latest"
 # App to manage software development and track bugs
 cask "linear-linear"
+# Native desktop app for Messenger (formerly Facebook Messenger)
+cask "messenger"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Team communication and collaboration software
 cask "slack"
+# Music streaming service
+cask "spotify"
 # Enable Windows-like program quitting when all windows are closed
 cask "swift-quit"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Unpacks archive files
+cask "the-unarchiver"
+# File transfer application
+cask "transmit"
 # Rust-based terminal
 cask "warp"
 # Multiplayer code editor
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "1Blocker", id: 1365531024
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "Bakery", id: 1575220747
+mas "Ice Cubes", id: 6444915884
+mas "Refined GitHub", id: 1519867270
+mas "TestFlight", id: 899247664
+mas "Xcode", id: 497799835

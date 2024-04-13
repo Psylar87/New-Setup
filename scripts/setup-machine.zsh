@@ -1,19 +1,23 @@
 #!/bin/zsh
 
-# Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if  ! command brew -v; then
+    # Install Homebrew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Add brew to PATH for zsh
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
-eval "$(/opt/homebrew/bin/brew shellenv)"
+    # Add brew to PATH for zsh
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zshrc
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+    echo "Homebrew is already installed"
+fi
+    # Brewfile location
+    # This assumes that the dotfiles repo has been cloned to /Users/brandoncard/New-Setup
+    BREWFILE_LOCATION="/Users/brandoncard/New-Setup/Brewfile"
 
-# Prompt for Brewfile location
-echo "Enter the path to your Brewfile:"
-read BREWFILE_LOCATION
-
-# Install applications from Brewfile
-cd $BREWFILE_LOCATION && brew bundle
-
+    # Install applications from Brewfile
+    brew bundle --file "$BREWFILE_LOCATION"
+    
+# Mackup should be installed by homebrew before hitting this point 
 # Create a new Mackup config file
 MACKUP_CONFIG_PATH="$HOME/.mackup.cfg"
 

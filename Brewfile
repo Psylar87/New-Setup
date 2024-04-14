@@ -1,4 +1,3 @@
-tap "dracula/install"
 tap "enigmaticdb/super-secret-tap"
 tap "finnvoor/tools"
 tap "homebrew/bundle"
@@ -134,6 +133,8 @@ cask "telegram"
 cask "the-unarchiver"
 # File transfer application
 cask "transmit"
+# Virtual machines UI using QEMU
+cask "utm"
 # Rust-based terminal
 cask "warp"
 # Multiplayer code editor

@@ -33,6 +33,10 @@ mackup uninstall --force
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 # Set scroll as traditional instead of natural
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+# set mouse speed
+defaults write NSGlobalDomain com.apple.mouse.scaling -float "2.5"
+# set trackpad
+defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -int "0"
 # set pathbar
 defaults write com.apple.finder "ShowPathbar" -bool "true"
 # set searchpath

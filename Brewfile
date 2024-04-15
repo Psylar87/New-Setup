@@ -9,12 +9,16 @@ brew "highway"
 brew "xz"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Bash scripts that integrate bat with various command-line tools
 brew "bat-extras"
+# Bash Automated Testing System
+brew "bats-core"
 # Parser generator
 brew "bison"
 # Library for command-line editing
@@ -29,6 +33,8 @@ brew "cask"
 brew "chruby"
 # Tool for managing dock items
 brew "dockutil"
+# Command-line tool to interact with exercism.io
+brew "exercism"
 # Modern, maintained replacement for ls
 brew "eza"
 # Play, record, convert, and stream audio and video
@@ -89,8 +95,6 @@ cask "craft"
 cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker"
-# Dark theme for Xcode
-cask "dracula-xcode"
 # Productivity app
 cask "dropzone"
 # Web browser

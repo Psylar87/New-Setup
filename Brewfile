@@ -39,6 +39,8 @@ brew "exercism"
 brew "eza"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg@6"
 # GNU database manager
 brew "gdbm"
 # GitHub command-line tool

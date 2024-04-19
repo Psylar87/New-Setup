@@ -41,6 +41,8 @@ brew "eza"
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg@6"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # GNU database manager
 brew "gdbm"
 # GitHub command-line tool
@@ -81,6 +83,12 @@ brew "rustup-init"
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
+# Programmatically correct mistyped console commands
+brew "thefuck"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
 # Metal-powered video upscaling
 brew "finnvoor/tools/fx-upscale"
 # Command-line interface for 1Password
@@ -115,6 +123,8 @@ cask "google-chrome"
 cask "gpg-suite"
 # Block nags to accept cookies and privacy invasive tracking in Safari
 cask "hush"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
 # Keyboard customiser
 cask "karabiner-elements"
 # Find shortcuts for any installed application

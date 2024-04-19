@@ -139,8 +139,6 @@ cask "swift-quit"
 cask "telegram"
 # Unpacks archive files
 cask "the-unarchiver"
-# File transfer application
-cask "transmit"
 # Virtual machines UI using QEMU
 cask "utm"
 # Rust-based terminal
@@ -156,4 +154,5 @@ mas "Bakery", id: 1575220747
 mas "Ice Cubes", id: 6444915884
 mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
+mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835

@@ -51,6 +51,8 @@ brew "gh"
 brew "gifski"
 # Distributed revision control system
 brew "git"
+# Render markdown on the CLI
+brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Improved top (interactive process viewer)

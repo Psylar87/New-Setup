@@ -33,6 +33,8 @@ brew "cask"
 brew "chruby"
 # Tool for managing dock items
 brew "dockutil"
+# Select default apps for documents and URL schemes on macOS
+brew "duti"
 # Command-line tool to interact with exercism.io
 brew "exercism"
 # Modern, maintained replacement for ls
@@ -95,6 +97,8 @@ brew "zsh-syntax-highlighting"
 brew "finnvoor/tools/fx-upscale"
 # Command-line interface for 1Password
 cask "1password-cli"
+# Menu bar tool to limit maximum charging percentage
+cask "aldente"
 # Chromium based browser
 cask "arc"
 # Menu bar icon organiser

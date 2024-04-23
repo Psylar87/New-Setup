@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+# Makes sure the home brew paths are always correct and avalible to the enviorment.
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+
 # Navigate to directory
 cd /Users/brandoncard/New-Setup/
 

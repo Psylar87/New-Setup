@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+# Update Homebrew
+brew update
+
+# Upgrade installed packages
+brew upgrade
+
 # Navigate to directory
 cd /Users/brandoncard/New-Setup/
 

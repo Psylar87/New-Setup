@@ -44,8 +44,14 @@ else
     fi
 fi
 
+# Run brew update
+/opt/homebrew/bin/brew update
+
 # Run the brew bundle dump
 /opt/homebrew/bin/brew bundle dump --describe --force
+
+# Run brew upgrade
+/opt/homebrew/bin/brew upgrade
 
 # Run Mackup
 /opt/homebrew/bin/mackup backup --force

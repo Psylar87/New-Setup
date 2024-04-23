@@ -48,6 +48,9 @@ else
     fi
 fi
 
+# Run brew doctor
+/opt/homebrew/bin/brew doctor
+
 # Run brew update
 /opt/homebrew/bin/brew update
 
@@ -56,9 +59,6 @@ fi
 
 # Run brew upgrade
 /opt/homebrew/bin/brew upgrade
-
-# Run brew doctor
-/opt/homebrew/bin/brew doctor
 
 # Run Mackup
 /opt/homebrew/bin/mackup backup --force

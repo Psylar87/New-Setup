@@ -69,6 +69,8 @@ brew "lua"
 brew "luarocks"
 # Keep your Mac's application settings in sync
 brew "mackup"
+# CLI for Node.js style checker and lint tool for Markdown files
+brew "markdownlint-cli"
 # Mac App Store command-line interface
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -77,6 +79,8 @@ brew "neovim"
 brew "pngquant"
 # Theme for zsh
 brew "powerlevel10k"
+# Python Language Server for the Language Server Protocol
+brew "python-lsp-server"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby

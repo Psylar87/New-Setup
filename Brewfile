@@ -93,6 +93,8 @@ brew "sl"
 brew "speedtest-cli"
 # Programmatically correct mistyped console commands
 brew "thefuck"
+# Ncurses-based klondike solitaire game
+brew "tty-solitaire"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh

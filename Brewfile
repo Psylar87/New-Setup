@@ -95,6 +95,8 @@ brew "speedtest-cli"
 brew "thefuck"
 # Ncurses-based klondike solitaire game
 brew "tty-solitaire"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh

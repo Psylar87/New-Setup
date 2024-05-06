@@ -109,6 +109,8 @@ cask "aldente"
 cask "arc"
 # Menu bar icon organiser
 cask "bartender"
+# Utility improving 3rd party mouse performance and functionalities
+cask "bettermouse"
 # Mounts cloud storages as local discs
 cask "cloudmounter"
 # The Homebrew Companion

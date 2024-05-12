@@ -73,6 +73,8 @@ brew "mackup"
 brew "mas"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
 # PNG image optimizing utility
 brew "pngquant"
 # Theme for zsh
@@ -93,6 +95,8 @@ brew "speedtest-cli"
 brew "thefuck"
 # Ncurses-based klondike solitaire game
 brew "tty-solitaire"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -137,6 +141,8 @@ cask "google-chrome"
 cask "gpg-suite"
 # Block nags to accept cookies and privacy invasive tracking in Safari
 cask "hush"
+# Free and open-source media player
+cask "iina"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Keyboard customiser
@@ -157,6 +163,8 @@ cask "sf-symbols"
 cask "slack"
 # Music streaming service
 cask "spotify"
+# System monitor for the menu bar
+cask "stats"
 # Enable Windows-like program quitting when all windows are closed
 cask "swift-quit"
 # Messaging app with a focus on speed and security
@@ -167,6 +175,8 @@ cask "the-unarchiver"
 cask "utm"
 # Rust-based terminal
 cask "warp"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 # Multiplayer code editor
 cask "zed"
 # Video communication and virtual meeting platform

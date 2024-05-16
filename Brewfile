@@ -139,6 +139,8 @@ cask "font-monaspace-nerd-font"
 cask "google-chrome"
 # Tools to protect your emails and files
 cask "gpg-suite"
+# Open-source video transcoder
+cask "handbrake"
 # Block nags to accept cookies and privacy invasive tracking in Safari
 cask "hush"
 # Free and open-source media player
@@ -159,6 +161,8 @@ cask "linear-linear"
 cask "messenger"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# VPN client for secure internet access and private browsing
+cask "nordvpn"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Team communication and collaboration software
@@ -173,6 +177,8 @@ cask "swift-quit"
 cask "telegram"
 # Unpacks archive files
 cask "the-unarchiver"
+# Open-source BitTorrent client
+cask "transmission"
 # Virtual machines UI using QEMU
 cask "utm"
 # Rust-based terminal
@@ -183,3 +189,12 @@ cask "wezterm"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "1Blocker", id: 1365531024
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "Bakery", id: 1575220747
+mas "Ice Cubes", id: 6444915884
+mas "Refined GitHub", id: 1519867270
+mas "TestFlight", id: 899247664
+mas "Transmit", id: 1436522307
+mas "Xcode", id: 497799835

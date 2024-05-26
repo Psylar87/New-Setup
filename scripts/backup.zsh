@@ -48,17 +48,8 @@ else
     fi
 fi
 
-# Run brew doctor
-/opt/homebrew/bin/brew doctor
-
-# Run brew upgrade
-/opt/homebrew/bin/brew upgrade
-
 # Run the brew bundle dump
 /opt/homebrew/bin/brew bundle dump --describe --force
-
-# Run brew update
-/opt/homebrew/bin/brew update
 
 # Run Mackup
 /opt/homebrew/bin/mackup backup --force

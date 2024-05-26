@@ -1,7 +1,6 @@
 tap "enigmaticdb/super-secret-tap"
 tap "finnvoor/tools"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "jesseduffield/lazygit"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
@@ -130,11 +129,16 @@ cask "dropzone"
 # Web browser
 cask "firefox"
 # Developer targeted fonts with a high number of glyphs
+cask "font-d2coding-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-heavy-data-nerd-font"
+# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
 # Superfamily of fonts for code
 cask "font-monaspace"
 # Developer targeted fonts with a high number of glyphs
 cask "font-monaspace-nerd-font"
+cask "font-source-code-pro"
 # Web browser
 cask "google-chrome"
 # Tools to protect your emails and files
@@ -169,8 +173,6 @@ cask "sf-symbols"
 cask "slack"
 # Music streaming service
 cask "spotify"
-# System monitor for the menu bar
-cask "stats"
 # Enable Windows-like program quitting when all windows are closed
 cask "swift-quit"
 # Messaging app with a focus on speed and security
@@ -189,3 +191,23 @@ cask "wezterm"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
+vscode "benjaminbenais.copilot-theme"
+vscode "bierner.markdown-preview-github-styles"
+vscode "catppuccin.catppuccin-vsc"
+vscode "codeium.codeium"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "glenn2223.live-sass"
+vscode "golang.go"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "oderwat.indent-rainbow"
+vscode "ritwickdey.liveserver"
+vscode "sswg.swift-lang"
+vscode "sumneko.lua"
+vscode "vadimcn.vscode-lldb"

@@ -128,19 +128,12 @@ cask "docker"
 cask "dropzone"
 # Web browser
 cask "firefox"
-# Developer targeted fonts with a high number of glyphs
 cask "font-agave-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-anonymice-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-d2coding-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-heavy-data-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-jetbrains-mono-nerd-font"
-# Superfamily of fonts for code
 cask "font-monaspace"
-# Developer targeted fonts with a high number of glyphs
 cask "font-monaspace-nerd-font"
 cask "font-source-code-pro"
 # Web browser
@@ -195,12 +188,3 @@ cask "wezterm"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "1Blocker", id: 1365531024
-mas "1Password for Safari", id: 1569813296
-mas "Amphetamine", id: 937984704
-mas "Bakery", id: 1575220747
-mas "Ice Cubes", id: 6444915884
-mas "Refined GitHub", id: 1519867270
-mas "TestFlight", id: 899247664
-mas "Transmit", id: 1436522307
-mas "Xcode", id: 497799835

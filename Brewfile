@@ -162,10 +162,14 @@ cask "linear-linear"
 cask "messenger"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# VPN client
+cask "mullvadvpn"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Instant messaging application focusing on security
+cask "signal"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
@@ -176,6 +180,8 @@ cask "swift-quit"
 cask "telegram"
 # Unpacks archive files
 cask "the-unarchiver"
+# Web browser focusing on security
+cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
 # Virtual machines UI using QEMU

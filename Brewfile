@@ -188,6 +188,8 @@ cask "transmission"
 cask "utm"
 # Rust-based terminal
 cask "warp"
+# Terminal emulator
+cask "wave"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 # Multiplayer code editor
@@ -204,3 +206,23 @@ mas "Tailscale", id: 1475387142
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
+vscode "benjaminbenais.copilot-theme"
+vscode "bierner.markdown-preview-github-styles"
+vscode "catppuccin.catppuccin-vsc"
+vscode "codeium.codeium"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "glenn2223.live-sass"
+vscode "golang.go"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "oderwat.indent-rainbow"
+vscode "ritwickdey.liveserver"
+vscode "sswg.swift-lang"
+vscode "sumneko.lua"
+vscode "vadimcn.vscode-lldb"

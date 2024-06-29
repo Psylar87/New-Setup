@@ -48,6 +48,12 @@ else
     fi
 fi
 
+# Update Homebrew
+/opt/homebrew/bin/brew update
+
+# Upgrade Homebrew packages
+/opt/homebrew/bin/brew upgrade
+
 # Run the brew bundle dump
 /opt/homebrew/bin/brew bundle dump --describe --force
 

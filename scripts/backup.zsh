@@ -48,6 +48,9 @@ else
     fi
 fi
 
+# Diagnose potential issues with the Homebrew installation
+/opt/homebrew/bin/brew doctor
+
 # Update Homebrew
 /opt/homebrew/bin/brew update
 

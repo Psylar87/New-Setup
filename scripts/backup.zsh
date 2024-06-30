@@ -76,5 +76,3 @@ if $HOMEBREW_PATH/git status --porcelain | grep .; then
 else
     echo "No changes to commit"
 fi
-
-

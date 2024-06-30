@@ -16,6 +16,7 @@ cd $SCRIPT_DIR
 # Create the timestamp file if it doesn't exist
 if [ ! -f "$TIMESTAMP_FILE" ]; then
     touch "$TIMESTAMP_FILE"
+    echo "0" > "$TIMESTAMP_FILE"
 
     # Git commit for creation of last_wallpaper_change.txt file
     $HOMEBREW_PATH/git add "$TIMESTAMP_FILE"
@@ -26,7 +27,7 @@ fi
 last_change_timestamp=$(cat "$TIMESTAMP_FILE")
 
 # Get path of current desktop wallpaper using osascript
-wallpaper_path=$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)' 2>/dev/null)
+wallpaper_path=$(osascript -e 'tell application "System Events" to tell current desktop to get picture' 2>/dev/null) 
 
 if [ -z "$wallpaper_path" ]; then
     echo "No wallpaper change detected."
@@ -75,4 +76,5 @@ if $HOMEBREW_PATH/git status --porcelain | grep .; then
 else
     echo "No changes to commit"
 fi
+
 

@@ -1,74 +1,78 @@
 #!/bin/zsh
 
-# Makes sure the home brew paths are always correct and avalible to the enviorment.
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/sbin:$PATH"
+# Homebrew Path
+HOMEBREW_PATH="/opt/homebrew/bin"
+HOMEBREW_SBIN="/opt/homebrew/sbin"
+SCRIPT_DIR="/Users/brandoncard/New-Setup"
+WALLPAPER_BACKUP_DIR="${SCRIPT_DIR}"
+TIMESTAMP_FILE="${SCRIPT_DIR}/last_wallpaper_change.txt"
 
-# Navigate to directory
-cd /Users/brandoncard/New-Setup/
+# Ensuring Homebrew paths are always correct and available
+export PATH="$HOMEBREW_PATH:$HOMEBREW_SBIN:$PATH"
 
-# Wallpaper backup
-# Path to store the timestamp of the last wallpaper change
-timestamp_file="/Users/brandoncard/New-Setup/last_wallpaper_change.txt"
+# Navigate to script directory
+cd $SCRIPT_DIR
 
 # Create the timestamp file if it doesn't exist
-if [ ! -f "$timestamp_file" ]; then
-    touch "$timestamp_file"
+if [ ! -f "$TIMESTAMP_FILE" ]; then
+    touch "$TIMESTAMP_FILE"
 
     # Git commit for creation of last_wallpaper_change.txt file
-    /opt/homebrew/bin/git add "$timestamp_file"
+    $HOMEBREW_PATH/git add "$TIMESTAMP_FILE"
+    $HOMEBREW_PATH/git commit -m "Create timestamp file for wallpaper changes"
 fi
 
 # Get timestamp of last wallpaper change
-last_change_timestamp=$(cat "$timestamp_file")
+last_change_timestamp=$(cat "$TIMESTAMP_FILE")
 
 # Get path of current desktop wallpaper using osascript
 wallpaper_path=$(osascript -e 'tell app "finder" to get posix path of (get desktop picture as alias)' 2>/dev/null)
-
-backup_directory="/Users/brandoncard/New-Setup/"
 
 if [ -z "$wallpaper_path" ]; then
     echo "No wallpaper change detected."
 else
     echo "Wallpaper path: $wallpaper_path"
+    
     # Current modification time of desktop wallpaper
     current_timestamp=$(stat -f "%m" "$wallpaper_path" 2>/dev/null)
 
-    # Check if wallpaper has been changed recently
+    # Check if wallpaper has been changed
     if [ "$last_change_timestamp" != "$current_timestamp" ]; then
-        # Copy orginal file to repo
-        cp "$wallpaper_path" "$backup_directory"
+        # Copy original file to backup directory and rename to Desktop.png
+        cp "$wallpaper_path" "$WALLPAPER_BACKUP_DIR" || { echo "Failed to copy wallpaper"; exit 1; }
+        new_wallpaper_path="${WALLPAPER_BACKUP_DIR}/Desktop.png"
+        mv "${WALLPAPER_BACKUP_DIR}/$(basename "$wallpaper_path")" "$new_wallpaper_path" || { echo "Failed to rename wallpaper"; exit 1; }
 
-        # Rename the wallpaper to Desktop.png
-        new_wallpaper_path=$backup_directory/Desktop.png
-        mv "$backup_directory/$(basename $wallpaper_path)" "$new_wallpaper_path"
-        
         # Update timestamp of last wallpaper change
-        echo "$current_timestamp" > "$timestamp_file"
+        echo "$current_timestamp" > "$TIMESTAMP_FILE"
+        
+        # Add new wallpaper to git
+        $HOMEBREW_PATH/git add "$new_wallpaper_path"
     fi
 fi
 
 # Diagnose potential issues with the Homebrew installation
-/opt/homebrew/bin/brew doctor
+$HOMEBREW_PATH/brew doctor
 
 # Update Homebrew
-/opt/homebrew/bin/brew update
+$HOMEBREW_PATH/brew update
 
 # Upgrade Homebrew packages
-/opt/homebrew/bin/brew upgrade
+$HOMEBREW_PATH/brew upgrade
 
 # Run the brew bundle dump
-/opt/homebrew/bin/brew bundle dump --describe --force
+$HOMEBREW_PATH/brew bundle dump --describe --force
 
 # Run Mackup
-/opt/homebrew/bin/mackup backup --force
-/opt/homebrew/bin/mackup uninstall --force
+$HOMEBREW_PATH/mackup backup --force
+$HOMEBREW_PATH/mackup uninstall --force
 
-# Git coomit for Brewfile
-if /opt/homebrew/bin/git status --porcelain | grep .; then
-    /opt/homebrew/bin/git add .
-    /opt/homebrew/bin/git commit -m "Auto-update"
-    /opt/homebrew/bin/git push
+# Git commit for Brewfile
+if $HOMEBREW_PATH/git status --porcelain | grep .; then
+    $HOMEBREW_PATH/git add .
+    $HOMEBREW_PATH/git commit -m "Auto-update"
+    $HOMEBREW_PATH/git push
 else
     echo "No changes to commit"
 fi
+

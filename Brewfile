@@ -164,8 +164,8 @@ cask "messenger"
 cask "monitorcontrol"
 # VPN client
 cask "mullvadvpn"
-# VPN client for secure internet access and private browsing
-cask "nordvpn"
+# Peer to peer Bitorrent client
+cask "qbittorrent"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Instant messaging application focusing on security
@@ -198,14 +198,3 @@ cask "wezterm"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "1Blocker", id: 1365531024
-mas "1Password for Safari", id: 1569813296
-mas "Amphetamine", id: 937984704
-mas "Bakery", id: 1575220747
-mas "Ice Cubes", id: 6444915884
-mas "Infuse", id: 1136220934
-mas "Refined GitHub", id: 1519867270
-mas "Tailscale", id: 1475387142
-mas "TestFlight", id: 899247664
-mas "Transmit", id: 1436522307
-mas "Xcode", id: 497799835

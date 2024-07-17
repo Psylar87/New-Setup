@@ -6,6 +6,8 @@ tap "jesseduffield/lazygit"
 brew "highway"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# ARP scanning and fingerprinting tool
+brew "arp-scan"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -70,6 +72,8 @@ brew "luarocks"
 brew "mackup"
 # Mac App Store command-line interface
 brew "mas"
+# 'traceroute' and 'ping' in a single tool
+brew "mtr"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Execute binaries from Python packages in isolated environments

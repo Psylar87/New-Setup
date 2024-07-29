@@ -46,6 +46,8 @@ brew "eza"
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg@6"
+# Create thumbnails for your video files
+brew "ffmpegthumbnailer"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU database manager
@@ -62,6 +64,8 @@ brew "glow"
 brew "go"
 # Improved top (interactive process viewer)
 brew "htop"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Portable Foreign Function Interface library
 brew "libffi"
 # YAML Parser
@@ -82,6 +86,8 @@ brew "neovim"
 brew "pipx"
 # PNG image optimizing utility
 brew "pngquant"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Theme for zsh
 brew "powerlevel10k"
 # Python Language Server for the Language Server Protocol
@@ -100,6 +106,10 @@ brew "speedtest-cli"
 brew "thefuck"
 # Ncurses-based klondike solitaire game
 brew "tty-solitaire"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
 # Feature-rich command-line audio/video downloader
 brew "yt-dlp"
 # Shell extension to navigate your filesystem faster

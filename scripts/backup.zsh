@@ -61,6 +61,9 @@ $HOMEBREW_PATH/brew update
 # Upgrade Homebrew packages
 $HOMEBREW_PATH/brew upgrade
 
+# Cleanup Homebrew packages
+$HOMEBREW_PATH/brew cleanup
+
 # Run the brew bundle dump
 $HOMEBREW_PATH/brew bundle dump --describe --force
 

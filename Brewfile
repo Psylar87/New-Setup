@@ -92,6 +92,8 @@ brew "poppler"
 brew "powerlevel10k"
 # Python Language Server for the Language Server Protocol
 brew "python-lsp-server"
+# Command-line interface for qBittorrent written in Go
+brew "qbittorrent-cli"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Install Ruby, JRuby, Rubinius, TruffleRuby, or mruby
@@ -136,6 +138,8 @@ cask "cloudmounter"
 cask "cork"
 # Native document editor
 cask "craft"
+# Server and cloud storage browser
+cask "cyberduck"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices

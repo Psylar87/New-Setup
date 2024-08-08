@@ -148,6 +148,8 @@ cask "discord"
 cask "docker"
 # Productivity app
 cask "dropzone"
+# Desktop client for Ente Auth
+cask "ente-auth"
 # Web browser
 cask "firefox"
 cask "font-agave-nerd-font"
@@ -188,6 +190,10 @@ cask "messenger"
 cask "monitorcontrol"
 # VPN client
 cask "mullvadvpn"
+# Client for Proton Drive
+cask "proton-drive"
+# Client for Proton Mail and Proton Calendar
+cask "proton-mail"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Tool that provides consistent, highly configurable symbols for apps

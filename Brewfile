@@ -136,7 +136,7 @@ cask "bartender"
 cask "bettermouse"
 # Mounts cloud storages as local discs
 cask "cloudmounter"
-# The Ultimate Homebrew Companion
+# GUI companion app for Homebrew
 cask "cork"
 # Native document editor
 cask "craft"

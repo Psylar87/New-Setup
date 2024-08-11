@@ -62,6 +62,8 @@ brew "git"
 brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Directory/file & DNS busting tool written in Go
+brew "gobuster"
 # Improved top (interactive process viewer)
 brew "htop"
 # Lightweight and flexible command-line JSON processor

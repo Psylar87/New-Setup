@@ -230,3 +230,34 @@ cask "wezterm"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
+mas "1Blocker", id: 1365531024
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "Bakery", id: 1575220747
+mas "Ice Cubes", id: 6444915884
+mas "Infuse", id: 1136220934
+mas "Numbers", id: 409203825
+mas "Refined GitHub", id: 1519867270
+mas "TestFlight", id: 899247664
+mas "Transmit", id: 1436522307
+mas "Xcode", id: 497799835
+vscode "benjaminbenais.copilot-theme"
+vscode "bierner.markdown-preview-github-styles"
+vscode "catppuccin.catppuccin-vsc"
+vscode "codeium.codeium"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "glenn2223.live-sass"
+vscode "golang.go"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "oderwat.indent-rainbow"
+vscode "ritwickdey.liveserver"
+vscode "sswg.swift-lang"
+vscode "sumneko.lua"
+vscode "vadimcn.vscode-lldb"

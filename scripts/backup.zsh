@@ -1,5 +1,11 @@
 #!/bin/zsh
 
+# Logs
+echo "Script started at $(date)"
+echo "Current user: $(whoami)"
+echo "Current directory: $(pwd)"
+echo "Homebrew path: $HOMEBREW_PATH"
+
 # Homebrew Path
 HOMEBREW_PATH="/opt/homebrew/bin"
 HOMEBREW_SBIN="/opt/homebrew/sbin"

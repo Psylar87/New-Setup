@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# Source zshrc
+source ~/.zshrc
+
 # Logs
 echo "Script started at $(date)"
 echo "Current user: $(whoami)"

@@ -3,11 +3,15 @@
 # Source zshrc
 source ~/.zshrc
 
-# Logs
+# Set up logging
+LOG_FILE="/Users/brandoncard/New-Setup/script_log.txt"
+exec > >(tee -a "$LOG_FILE") 2>&1
+
 echo "Script started at $(date)"
 echo "Current user: $(whoami)"
 echo "Current directory: $(pwd)"
-echo "Homebrew path: $HOMEBREW_PATH"
+echo "PATH: $PATH"
+echo "HOMEBREW_PATH: $HOMEBREW_PATH"
 
 # Homebrew Path
 HOMEBREW_PATH="/opt/homebrew/bin"

@@ -3,10 +3,7 @@
 # Source zshrc
 source ~/.zshrc
 
-# Set up logging
-LOG_FILE="/Users/brandoncard/New-Setup/script_log.txt"
-exec > >(tee -a "$LOG_FILE") 2>&1
-
+# Logging
 echo "Script started at $(date)"
 echo "Current user: $(whoami)"
 echo "Current directory: $(pwd)"

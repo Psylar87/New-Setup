@@ -306,3 +306,7 @@ All your files have been put back into place. You can now safely uninstall Macku
 
 Thanks for using Mackup!
 ]2;if $HOMEBREW_PATH/git status --porcelain | grep --color=auto  .; then;  add .]1; M script_log.txt
+[main c058b6d] Auto-update
+ 1 file changed, 144 insertions(+)
+To github.com:Psylar87/New-Setup.git
+   3406ebf..c058b6d  main -> main

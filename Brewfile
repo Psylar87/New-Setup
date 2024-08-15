@@ -36,6 +36,8 @@ brew "cask"
 brew "chruby"
 # Tool for managing dock items
 brew "dockutil"
+# More intuitive version of du in rust
+brew "dust"
 # Select default apps for documents and URL schemes on macOS
 brew "duti"
 # Command-line tool to interact with exercism.io

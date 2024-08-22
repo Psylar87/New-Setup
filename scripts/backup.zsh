@@ -68,9 +68,8 @@ $HOMEBREW_PATH/brew doctor
 # Update Homebrew
 $HOMEBREW_PATH/brew update
 
-# Check for outdated packages and log the result
-echo "Outdated packages:" >> brew_outdated.log
-$HOMEBREW_PATH/brew outdated >> brew_outdated.log
+# Check for outdated packages
+$HOMEBREW_PATH/brew outdated
 
 # Upgrade Homebrew packages
 $HOMEBREW_PATH/brew upgrade

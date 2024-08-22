@@ -196,6 +196,8 @@ cask "linear-linear"
 cask "messenger"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
+# Web browser focused on privacy and on minimizing tracking and fingerprinting
+cask "mullvad-browser"
 # VPN client
 cask "mullvadvpn"
 # Client for Proton Drive
@@ -238,7 +240,19 @@ cask "wezterm"
 cask "zed"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "[2m[2024-08-20 18:33:26][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+mas "1Blocker", id: 1365531024
+mas "1Password for Safari", id: 1569813296
+mas "Amphetamine", id: 937984704
+mas "Bakery", id: 1575220747
+mas "Ice Cubes", id: 6444915884
+mas "Infuse", id: 1136220934
+mas "Numbers", id: 409203825
+mas "Refined GitHub", id: 1519867270
+mas "TestFlight", id: 899247664
+mas "Transmit", id: 1436522307
+mas "Xcode", id: 497799835
+vscode "[2024-08-22 00:01:49] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2024-08-22 00:01:49] warn error looking up installed applications: no such file or directory (os error 2)"
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

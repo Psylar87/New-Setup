@@ -1,4 +1,4 @@
-#/Applications/Proton Drive.app/!/bin/zsh
+#!/bin/zsh
 
 # Script to manage the dock on macOS using defaults & dockutil
 # https://github.com/kcrawford/dockutil

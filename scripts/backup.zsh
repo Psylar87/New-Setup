@@ -74,6 +74,9 @@ $HOMEBREW_PATH/brew outdated
 # Upgrade Homebrew packages
 $HOMEBREW_PATH/brew upgrade
 
+# Upgrade cask applications
+$HOMEBREW_PATH/brew upgrade --cask
+
 # Cleanup Homebrew packages
 $HOMEBREW_PATH/brew cleanup
 

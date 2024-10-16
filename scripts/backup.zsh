@@ -5,10 +5,6 @@ source ~/.zshrc
 
 # Logging
 echo "Script started at $(date)"
-echo "Current user: $(whoami)"
-echo "Current directory: $(pwd)"
-echo "PATH: $PATH"
-echo "HOMEBREW_PATH: $HOMEBREW_PATH"
 
 # Homebrew Path
 HOMEBREW_PATH="/opt/homebrew/bin"

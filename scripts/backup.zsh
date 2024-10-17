@@ -4,6 +4,7 @@
 source ~/.zshrc
 
 # Logging
+echo "Current user: $(whoami)"
 echo "Script started at $(date)"
 
 # Homebrew Path

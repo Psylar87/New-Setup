@@ -14,9 +14,15 @@ defaults write com.apple.dock "show-recents" -bool "false"
 if ! command -v dockutil &> /dev/null
 then
     echo "dockutil could not be found"
-    # Inatsll dockutil
-    brew install dockutil
-    echo "dockutil installed"
+    # Install dockutil
+    if command -v brew &> /dev/null
+    then
+        brew install dockutil
+        echo "dockutil installed"
+    else
+        echo "Homebrew is not installed. Please install Homebrew first."
+        exit 1
+    fi
 fi
 
 # Setup dock
@@ -32,7 +38,7 @@ dockutil --add  /Applications/Telegram.app --position 6 --no-restart
 dockutil --add  /Applications/Signal.app --position 7 --no-restart
 dockutil --add  /Applications/Obsidian.app --position 8 --no-restart
 dockutil --add  /Applications/Ice\ Cubes.app --position 9 --no-restart
-dockutil --add  /Applications/Proton Drive.app --position 10 --no-restart
+dockutil --add  /Applications/Proton\ Drive.app --position 10 --no-restart
 dockutil --add  /Applications/Xcode.app --position 11 --no-restart
 dockutil --add  /Applications/Zed.app --position 12 --no-restart
 dockutil --add  /Applications/Linear.app --position 13 --no-restart

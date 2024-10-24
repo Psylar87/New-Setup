@@ -80,6 +80,20 @@ $HOMEBREW_PATH/brew cleanup
 # Run the brew bundle dump
 $HOMEBREW_PATH/brew bundle dump --describe --force
 
+# Update Oh My Zsh with error handling
+echo "Updating Oh My Zsh..."
+if ! omz update --unattended; then
+    echo "🛑 Oh My Zsh update failed with exit code $?" >&2
+    # Log the error
+    echo "[$(date)] Oh My Zsh update failed" >> "${SCRIPT_DIR}/update_errors.log"
+    # Continue script execution but notify
+    echo "Continuing with script despite Oh My Zsh update failure..."
+    # Optionally, you could set an error flag
+    OMZ_UPDATE_FAILED=1
+else
+    echo "✅ Oh My Zsh updated successfully"
+fi
+
 # Run Mackup
 $HOMEBREW_PATH/mackup backup --force
 $HOMEBREW_PATH/mackup uninstall --force

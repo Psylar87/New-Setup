@@ -87,7 +87,7 @@ if ! omz update --unattended; then
     echo "[$(date)] Oh My Zsh update failed" >> "${SCRIPT_DIR}/update_errors.log"
     # Continue script execution but notify
     echo "Continuing with script despite Oh My Zsh update failure..."
-    # Optionally, you could set an error flag
+    # Error flag
     OMZ_UPDATE_FAILED=1
 fi
 

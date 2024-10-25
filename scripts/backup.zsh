@@ -81,7 +81,6 @@ $HOMEBREW_PATH/brew cleanup
 $HOMEBREW_PATH/brew bundle dump --describe --force
 
 # Update Oh My Zsh with error handling
-echo "Updating Oh My Zsh..."
 if ! omz update --unattended; then
     echo "Oh My Zsh update failed with exit code $?" >&2
     # Log the error

@@ -81,7 +81,7 @@ $HOMEBREW_PATH/brew cleanup
 $HOMEBREW_PATH/brew bundle dump --describe --force
 
 # Update Oh My Zsh
-if ! output=$(omz update --unattended 2>&1); then
+if ! omz update --unattended; then
     echo "Oh My Zsh update failed with exit code $?" >&2
     # Log the error
     echo "[$(date)] Oh My Zsh update failed" >> "${SCRIPT_DIR}/update_errors.log"
@@ -89,12 +89,6 @@ if ! output=$(omz update --unattended 2>&1); then
     echo "Continuing with script despite Oh My Zsh update failure..."
     # Optionally, you could set an error flag
     OMZ_UPDATE_FAILED=1
-else
-    if echo "$output" | grep -q "Already up to date"; then
-        echo "Oh My Zsh is already up to date"
-    else
-        echo "Oh My Zsh has been updated"
-    fi
 fi
 
 # Run Mackup

@@ -6,18 +6,14 @@ tap "jesseduffield/lazygit"
 brew "highway"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
-# Library for command-line editing
-brew "readline"
-# Simple system information tool written in Python
-brew "archey4"
 # ARP scanning and fingerprinting tool
 brew "arp-scan"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2@1.7"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -28,14 +24,20 @@ brew "bat-extras"
 brew "bats-core"
 # Parser generator
 brew "bison"
+# Library for command-line editing
+brew "readline"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # HTTP/2 C Library
 brew "libnghttp2"
 # Emacs dependency management
 brew "cask"
+# Versatile and fast Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
 # Ruby environment tool
 brew "chruby"
+# Cross-platform make
+brew "cmake"
 # Command-line interface built-in Visual Studio Code
 brew "code-cli"
 # Tool for managing dock items
@@ -48,6 +50,8 @@ brew "duti"
 brew "exercism"
 # Modern, maintained replacement for ls
 brew "eza"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
@@ -76,6 +80,8 @@ brew "gobuster"
 brew "gopls"
 # Improved top (interactive process viewer)
 brew "htop"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Portable Foreign Function Interface library
@@ -96,8 +102,6 @@ brew "markdownlint-cli"
 brew "mas"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Execute binaries from Python packages in isolated environments
@@ -132,6 +136,8 @@ brew "thefuck"
 brew "tty-solitaire"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Vulkan ICD Loader
+brew "vulkan-loader"
 # Internet file retriever
 brew "wget"
 # Blazing fast terminal file manager written in Rust, based on async I/O
@@ -271,7 +277,7 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2024-10-26 02:00:34][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2m[2024-10-26 02:25:18][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

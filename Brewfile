@@ -6,14 +6,18 @@ tap "jesseduffield/lazygit"
 brew "highway"
 # General-purpose data compression with high compression ratio
 brew "xz"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
+# Library for command-line editing
+brew "readline"
+# Simple system information tool written in Python
+brew "archey4"
 # ARP scanning and fingerprinting tool
 brew "arp-scan"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2@1.7"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -24,8 +28,6 @@ brew "bat-extras"
 brew "bats-core"
 # Parser generator
 brew "bison"
-# Library for command-line editing
-brew "readline"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # HTTP/2 C Library
@@ -94,6 +96,8 @@ brew "markdownlint-cli"
 brew "mas"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Execute binaries from Python packages in isolated environments
@@ -267,7 +271,8 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2024-10-25 10:43:45][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2024-10-26 00:00:46] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2024-10-26 00:00:46] warn error looking up installed applications: no such file or directory (os error 2)"
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

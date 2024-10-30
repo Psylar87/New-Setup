@@ -8,12 +8,20 @@ brew "highway"
 brew "xz"
 # ARP scanning and fingerprinting tool
 brew "arp-scan"
-# Tool for generating GNU Standards-compliant Makefiles
-brew "automake"
-# Bourne-Again SHell, a UNIX command interpreter
-brew "bash"
+# YAML Parser
+brew "libyaml"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
+# Text processor and publishing toolchain for AsciiDoc
+brew "asciidoctor"
+# Tool for generating GNU Standards-compliant Makefiles
+brew "automake"
+# Library for command-line editing
+brew "readline"
+# Automatically formats Python code to conform to the PEP 8 style guide
+brew "autopep8"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2@1.7"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -24,8 +32,6 @@ brew "bat-extras"
 brew "bats-core"
 # Parser generator
 brew "bison"
-# Library for command-line editing
-brew "readline"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # HTTP/2 C Library
@@ -86,14 +92,16 @@ brew "imagemagick"
 brew "jq"
 # Portable Foreign Function Interface library
 brew "libffi"
-# YAML Parser
-brew "libyaml"
 # Powerful, lightweight programming language
 brew "lua"
 # Package manager for the Lua programming language
 brew "luarocks"
+# LZMA-based compression program similar to gzip or bzip2
+brew "lzip"
 # Keep your Mac's application settings in sync
 brew "mackup"
+# Utility for directing compilation
+brew "make"
 # Platform built on V8 to build network applications
 brew "node"
 # CLI for Node.js style checker and lint tool for Markdown files
@@ -283,8 +291,8 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2024-10-29 00:00:57] info searching for installations on your machine, this is done once and will take about 10 seconds..."
-vscode "[2024-10-29 00:00:57] warn error looking up installed applications: no such file or directory (os error 2)"
+vscode "[2024-10-30 00:00:54] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2024-10-30 00:00:54] warn error looking up installed applications: no such file or directory (os error 2)"
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

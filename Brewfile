@@ -142,8 +142,6 @@ brew "rust"
 brew "rustup"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
-# Command-line interface for https://speedtest.net bandwidth tests
-brew "speedtest-cli"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Ncurses-based klondike solitaire game
@@ -204,8 +202,6 @@ cask "font-jetbrains-mono-nerd-font"
 cask "font-monaspace"
 cask "font-monaspace-nerd-font"
 cask "font-source-code-pro"
-# Web browser
-cask "google-chrome"
 # Tools to protect your emails and files
 cask "gpg-suite"
 # Open-source video transcoder
@@ -291,7 +287,8 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2024-10-30 19:12:07][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2024-10-31 00:00:49] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2024-10-31 00:00:49] warn error looking up installed applications: no such file or directory (os error 2)"
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

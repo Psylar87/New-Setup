@@ -118,6 +118,8 @@ brew "mdv"
 brew "mtr"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Find/fix obsolete Nerd Font icons
+brew "nerdfix"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Package compiler and linker metadata toolkit
@@ -248,6 +250,8 @@ cask "proton-mail"
 cask "qbittorrent"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# 3D CAD software
+cask "shapr3d"
 # Instant messaging application focusing on security
 cask "signal"
 # Team communication and collaboration software
@@ -291,8 +295,8 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2024-11-13 00:01:06] info searching for installations on your machine, this is done once and will take about 10 seconds..."
-vscode "[2024-11-13 00:01:06] warn error looking up installed applications: no such file or directory (os error 2)"
+vscode "[2024-11-17 00:01:52] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2024-11-17 00:01:52] warn error looking up installed applications: no such file or directory (os error 2)"
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

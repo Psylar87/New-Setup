@@ -36,7 +36,7 @@ dockutil --add  /System/Applications/Messages.app --position 4 --no-restart
 dockutil --add  /Applications/Messenger.app --position 5 --no-restart
 dockutil --add  /Applications/Signal.app --position 6 --no-restart
 dockutil --add  /Applications/Obsidian.app --position 7 --no-restart
-dockutil --add  /Applications/Proton\ Drive.app --position 8 --no-restart
+dockutil --add  /Applications/Proton\ Mail.app --position 8 --no-restart
 dockutil --add  /Applications/Zed.app --position 9 --no-restart
 dockutil --add  /Applications/Linear.app --position 10 --no-restart
 

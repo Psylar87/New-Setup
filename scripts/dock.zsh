@@ -34,14 +34,11 @@ dockutil --add  /Applications/Slack.app --position 2 --no-restart
 dockutil --add  /Applications/Spotify.app --position 3 --no-restart
 dockutil --add  /System/Applications/Messages.app --position 4 --no-restart
 dockutil --add  /Applications/Messenger.app --position 5 --no-restart
-dockutil --add  /Applications/Telegram.app --position 6 --no-restart
-dockutil --add  /Applications/Signal.app --position 7 --no-restart
-dockutil --add  /Applications/Obsidian.app --position 8 --no-restart
-dockutil --add  /Applications/Ice\ Cubes.app --position 9 --no-restart
-dockutil --add  /Applications/Proton\ Drive.app --position 10 --no-restart
-dockutil --add  /Applications/Xcode.app --position 11 --no-restart
-dockutil --add  /Applications/Zed.app --position 12 --no-restart
-dockutil --add  /Applications/Linear.app --position 13 --no-restart
+dockutil --add  /Applications/Signal.app --position 6 --no-restart
+dockutil --add  /Applications/Obsidian.app --position 7 --no-restart
+dockutil --add  /Applications/Proton\ Drive.app --position 8 --no-restart
+dockutil --add  /Applications/Zed.app --position 9 --no-restart
+dockutil --add  /Applications/Linear.app --position 10 --no-restart
 
 # Add folder/directory as stack
 dockutil --add '~/Downloads' --view grid --display folder --allhomes --no-restart

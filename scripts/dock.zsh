@@ -29,16 +29,13 @@ fi
 # this will remove all dock items and prevent Killall Dock
 dockutil --remove all --no-restart
 # Start adding items
-dockutil --add  /Applications/Arc.app --position 1 --no-restart
-dockutil --add  /Applications/Slack.app --position 2 --no-restart
-dockutil --add  /Applications/Spotify.app --position 3 --no-restart
-dockutil --add  /System/Applications/Messages.app --position 4 --no-restart
-dockutil --add  /Applications/Messenger.app --position 5 --no-restart
-dockutil --add  /Applications/Signal.app --position 6 --no-restart
-dockutil --add  /Applications/Obsidian.app --position 7 --no-restart
-dockutil --add  /Applications/Proton\ Mail.app --position 8 --no-restart
-dockutil --add  /Applications/Zed.app --position 9 --no-restart
-dockutil --add  /Applications/Linear.app --position 10 --no-restart
+dockutil --add  /Applications/Zen\ Browser.app --position 1 --no-restart
+dockutil --add  /Applications/Spotify.app --position 2 --no-restart
+dockutil --add  /System/Applications/Messages.app --position 3 --no-restart
+dockutil --add  /Applications/Messenger.app --position 4 --no-restart
+dockutil --add  /Applications/Signal.app --position 5 --no-restart
+dockutil --add  /Applications/Proton\ Mail.app --position 6 --no-restart
+dockutil --add  /Applications/Zed.app --position 7 --no-restart
 
 # Add folder/directory as stack
 dockutil --add '~/Downloads' --view grid --display folder --allhomes --no-restart

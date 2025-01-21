@@ -74,9 +74,6 @@ $HOMEBREW_PATH/brew upgrade
 # Upgrade cask applications
 $HOMEBREW_PATH/brew upgrade --cask
 
-# Cleanup Homebrew packages
-$HOMEBREW_PATH/brew cleanup
-
 # Prune all cached downloads and remove all old versions of installed formulae and casks
 $HOMEBREW_PATH/brew cleanup --prune=all
 

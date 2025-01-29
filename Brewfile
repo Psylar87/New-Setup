@@ -180,6 +180,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # Metal-powered video upscaling
 brew "finnvoor/tools/fx-upscale"
+# Password manager that keeps all passwords secure behind one password
+cask "1password"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Menu bar tool to limit maximum charging percentage
@@ -242,6 +244,8 @@ cask "karabiner-elements"
 cask "keyclu"
 # Utility that shows the latest app updates
 cask "latest"
+# Custom Discord client
+cask "legcord"
 # App to manage software development and track bugs
 cask "linear-linear"
 # Native desktop app for Messenger (formerly Facebook Messenger)
@@ -305,7 +309,8 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2025-01-28 19:42:19][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-01-29 00:01:32] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-01-29 00:01:32] warn error looking up installed applications: no such file or directory (os error 2)"
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

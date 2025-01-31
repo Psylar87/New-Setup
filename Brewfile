@@ -60,12 +60,16 @@ brew "exercism"
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# Simple, fast and user-friendly alternative to find
+brew "fd"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg@6"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GNU database manager
@@ -122,6 +126,8 @@ brew "mtr"
 brew "neovim"
 # Find/fix obsolete Nerd Font icons
 brew "nerdfix"
+# Modern shell for the GitHub era
+brew "nushell"
 # Execute binaries from Python packages in isolated environments
 brew "pipx"
 # Package compiler and linker metadata toolkit
@@ -152,6 +158,10 @@ brew "serpl"
 brew "sl"
 # Command-line tool to customize Spotify client
 brew "spicetify-cli"
+# Cross-shell prompt for astronauts
+brew "starship"
+# User interface to the TELNET protocol
+brew "telnet"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Simplified and community-driven man pages
@@ -202,6 +212,8 @@ cask "cork"
 cask "craft"
 # Server and cloud storage browser
 cask "cyberduck"
+# Virtual monitor for screen sharing
+cask "deskpad"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
@@ -308,8 +320,7 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2025-01-30 00:01:09] info searching for installations on your machine, this is done once and will take about 10 seconds..."
-vscode "[2025-01-30 00:01:09] warn error looking up installed applications: no such file or directory (os error 2)"
+vscode "[2m[2025-01-30 21:53:35][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

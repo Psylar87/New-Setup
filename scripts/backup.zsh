@@ -59,20 +59,14 @@ else
     fi
 fi
 
-# Diagnose potential issues with the Homebrew installation
+# Diagnose potential issues with Homebrew
 $HOMEBREW_PATH/brew doctor
 
 # Update Homebrew
 $HOMEBREW_PATH/brew update
 
-# Check for outdated packages
-$HOMEBREW_PATH/brew outdated
-
-# Upgrade Homebrew packages
-$HOMEBREW_PATH/brew upgrade
-
-# Upgrade cask applications
-$HOMEBREW_PATH/brew upgrade --cask
+# Upgrade Homebrew packages & casks
+$HOMEBREW_PATH/brew upgrade && brew upgrade --cask
 
 # Prune all cached downloads and remove all old versions of installed formulae and casks
 $HOMEBREW_PATH/brew cleanup --prune=all

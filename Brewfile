@@ -1,3 +1,4 @@
+tap "charmbracelet/tap"
 tap "enigmaticdb/super-secret-tap"
 tap "finnvoor/tools"
 tap "homebrew/bundle"
@@ -190,6 +191,8 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
+# Generate images of code and terminal output.
+brew "charmbracelet/tap/freeze"
 # Metal-powered video upscaling
 brew "finnvoor/tools/fx-upscale"
 # Password manager that keeps all passwords secure behind one password
@@ -320,7 +323,8 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2025-02-06 13:48:56][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-02-07 00:00:54] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-02-07 00:00:54] warn error looking up installed applications: no such file or directory (os error 2)"
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

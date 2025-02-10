@@ -221,8 +221,6 @@ cask "craft"
 cask "cyberduck"
 # Virtual monitor for screen sharing
 cask "deskpad"
-# Voice and text chat software
-cask "discord"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Productivity app
@@ -283,6 +281,8 @@ cask "proton-drive"
 cask "proton-mail"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
+# Open source virtual/remote desktop application
+cask "rustdesk"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Instant messaging application focusing on security
@@ -303,6 +303,8 @@ cask "the-unarchiver"
 cask "tor-browser"
 # Virtual machines UI using QEMU
 cask "utm"
+# Open-source code editor
+cask "visual-studio-code"
 # Terminal emulator
 cask "wave"
 # Multiplayer code editor
@@ -311,20 +313,23 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-mas "1Blocker", id: 1365531024
-mas "1Password for Safari", id: 1569813296
-mas "Amphetamine", id: 937984704
-mas "Bakery", id: 1575220747
-mas "ExcalidrawZ", id: 6636493997
-mas "Ice Cubes", id: 6444915884
-mas "Infuse", id: 1136220934
-mas "Numbers", id: 409203825
-mas "Refined GitHub", id: 1519867270
-mas "TestFlight", id: 899247664
-mas "Transmit", id: 1436522307
-mas "Xcode", id: 497799835
-vscode "[2025-02-07 00:00:54] info searching for installations on your machine, this is done once and will take about 10 seconds..."
-vscode "[2025-02-07 00:00:54] warn error looking up installed applications: no such file or directory (os error 2)"
-vscode "no installation of code oss was found."
-vscode ""
-vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"
+vscode "benjaminbenais.copilot-theme"
+vscode "bierner.markdown-preview-github-styles"
+vscode "catppuccin.catppuccin-vsc"
+vscode "codeium.codeium"
+vscode "eamodio.gitlens"
+vscode "esbenp.prettier-vscode"
+vscode "github.copilot"
+vscode "github.copilot-chat"
+vscode "glenn2223.live-sass"
+vscode "golang.go"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ms-vscode-remote.remote-containers"
+vscode "oderwat.indent-rainbow"
+vscode "ritwickdey.liveserver"
+vscode "sswg.swift-lang"
+vscode "sumneko.lua"
+vscode "vadimcn.vscode-lldb"

@@ -48,7 +48,7 @@ brew "chruby"
 # Cross-platform make
 brew "cmake"
 # Command-line interface built-in Visual Studio Code
-brew "code-cli"
+brew "code-cli", link: false
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
 # Tool for managing dock items

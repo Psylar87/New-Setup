@@ -48,7 +48,7 @@ brew "chruby"
 # Cross-platform make
 brew "cmake"
 # Command-line interface built-in Visual Studio Code
-brew "code-cli", link: false
+brew "code-cli"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
 # Tool for managing dock items
@@ -325,23 +325,7 @@ mas "Refined GitHub", id: 1519867270
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "benjaminbenais.copilot-theme"
-vscode "bierner.markdown-preview-github-styles"
-vscode "catppuccin.catppuccin-vsc"
-vscode "codeium.codeium"
-vscode "eamodio.gitlens"
-vscode "esbenp.prettier-vscode"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "glenn2223.live-sass"
-vscode "golang.go"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-vscode-remote.remote-containers"
-vscode "oderwat.indent-rainbow"
-vscode "ritwickdey.liveserver"
-vscode "sswg.swift-lang"
-vscode "sumneko.lua"
-vscode "vadimcn.vscode-lldb"
+vscode "[2m[2025-02-12 23:30:21][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "no installation of code oss was found."
+vscode ""
+vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

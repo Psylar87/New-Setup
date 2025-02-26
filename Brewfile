@@ -45,6 +45,8 @@ brew "chafa"
 brew "chruby"
 # Cross-platform make
 brew "cmake"
+# Documentation for CMake
+brew "cmake-docs"
 # Command-line interface built-in Visual Studio Code
 brew "code-cli"
 # Apjanke's fork of the classic cowsay project
@@ -311,8 +313,7 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "[2025-02-25 00:00:48] info searching for installations on your machine, this is done once and will take about 10 seconds..."
-vscode "[2025-02-25 00:00:48] warn error looking up installed applications: no such file or directory (os error 2)"
+vscode "[2m[2025-02-25 21:29:30][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

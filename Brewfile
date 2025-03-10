@@ -33,8 +33,6 @@ brew "bat-extras"
 brew "bats-core"
 # Parser generator
 brew "bison"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # HTTP/2 C Library
 brew "libnghttp2"
 # Emacs dependency management
@@ -65,6 +63,8 @@ brew "eza"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
@@ -317,8 +317,8 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "[2025-03-09 00:01:08] info searching for installations on your machine, this is done once and will take about 10 seconds..."
-vscode "[2025-03-09 00:01:08] warn error looking up installed applications: no such file or directory (os error 2)"
+vscode "[2025-03-10 00:01:22] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-03-10 00:01:22] warn error looking up installed applications: no such file or directory (os error 2)"
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

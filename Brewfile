@@ -33,6 +33,8 @@ brew "bat-extras"
 brew "bats-core"
 # Parser generator
 brew "bison"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # HTTP/2 C Library
 brew "libnghttp2"
 # Emacs dependency management
@@ -317,8 +319,7 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "[2025-03-17 00:01:39] info searching for installations on your machine, this is done once and will take about 10 seconds..."
-vscode "[2025-03-17 00:01:39] warn error looking up installed applications: no such file or directory (os error 2)"
+vscode "[2m[2025-03-17 22:15:37][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

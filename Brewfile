@@ -52,6 +52,8 @@ brew "code-cli"
 brew "cowsay"
 # Tool for managing dock items
 brew "dockutil"
+# Command-line DNS Client for Humans
+brew "doggo"
 # More intuitive version of du in rust
 brew "dust"
 # Select default apps for documents and URL schemes on macOS
@@ -322,7 +324,7 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "[2m[2025-03-31 09:06:12][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-04-01 00:00:38] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

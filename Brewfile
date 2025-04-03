@@ -324,7 +324,7 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "[2025-04-02 00:01:26] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-04-03 00:00:53] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

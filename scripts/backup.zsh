@@ -81,7 +81,7 @@ $HOMEBREW_PATH/mackup uninstall --force
 # Git commit for Brewfile
 if $HOMEBREW_PATH/git status --porcelain | grep .; then
     $HOMEBREW_PATH/git add .
-    $HOMEBREW_PATH/git commit -m "chore:(backups) Auto update"
+    $HOMEBREW_PATH/git commit -m "chore(backups): Auto update"
     $HOMEBREW_PATH/git push
 else
     echo "No changes to commit"

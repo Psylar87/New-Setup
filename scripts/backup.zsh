@@ -34,13 +34,13 @@ fi
 last_change_timestamp=$(cat "$TIMESTAMP_FILE")
 
 # Get path of current desktop wallpaper using osascript
-wallpaper_path=$(osascript -e 'tell application "System Events" to tell current desktop to get picture' 2>/dev/null) 
+wallpaper_path=$(osascript -e 'tell application "System Events" to tell current desktop to get picture' 2>/dev/null)
 
 if [ -z "$wallpaper_path" ]; then
     echo "No wallpaper change detected."
 else
     echo "Wallpaper path: $wallpaper_path"
-    
+
     # Current modification time of desktop wallpaper
     current_timestamp=$(stat -f "%m" "$wallpaper_path" 2>/dev/null)
 
@@ -53,7 +53,7 @@ else
 
         # Update timestamp of last wallpaper change
         echo "$current_timestamp" > "$TIMESTAMP_FILE"
-        
+
         # Add new wallpaper to git
         $HOMEBREW_PATH/git add "$new_wallpaper_path"
     fi
@@ -81,7 +81,7 @@ $HOMEBREW_PATH/mackup uninstall --force
 # Git commit for Brewfile
 if $HOMEBREW_PATH/git status --porcelain | grep .; then
     $HOMEBREW_PATH/git add .
-    $HOMEBREW_PATH/git commit -m "chore: Auto-update"
+    $HOMEBREW_PATH/git commit -m "chore:(backups) Auto update"
     $HOMEBREW_PATH/git push
 else
     echo "No changes to commit"

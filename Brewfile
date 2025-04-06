@@ -208,6 +208,8 @@ cask "1password-cli"
 cask "aldente"
 # Enable Windows-like alt-tab
 cask "alt-tab"
+# Application uninstaller
+cask "appcleaner"
 # Chromium based browser
 cask "arc"
 # Menu bar icon organiser
@@ -286,6 +288,8 @@ cask "mullvadvpn"
 cask "notesnook"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# WebKit based web browser
+cask "orion"
 # Client for Proton Drive
 cask "proton-drive"
 # Client for Proton Mail and Proton Calendar
@@ -324,7 +328,7 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "[2m[2025-04-05 21:37:31][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2m[2025-04-06 17:20:37][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

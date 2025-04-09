@@ -136,6 +136,8 @@ brew "mtr"
 brew "neovim"
 # Find/fix obsolete Nerd Font icons
 brew "nerdfix"
+# Send push notifications to your phone or desktop via PUT/POST
+brew "ntfy"
 # Modern shell for the GitHub era
 brew "nushell"
 # Execute binaries from Python packages in isolated environments
@@ -318,8 +320,6 @@ cask "telegram"
 cask "the-unarchiver"
 # Web browser focusing on security
 cask "tor-browser"
-# Virtual machines UI using QEMU
-cask "utm"
 # Open-source code editor
 cask "visual-studio-code"
 # Terminal emulator
@@ -330,7 +330,7 @@ cask "zed"
 cask "zen-browser"
 # Video communication and virtual meeting platform
 cask "zoom"
-vscode "[2025-04-07 00:00:47] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-04-09 00:01:26] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

@@ -343,7 +343,7 @@ mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Unsqueeze", id: 0
 mas "Xcode", id: 497799835
-vscode "[2025-04-14 00:01:36] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-04-15 00:00:46] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

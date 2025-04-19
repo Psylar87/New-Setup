@@ -182,8 +182,6 @@ brew "telnet"
 brew "thefuck"
 # Terminal multiplexer
 brew "tmux"
-# Ncurses-based klondike solitaire game
-brew "tty-solitaire"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
 # Vulkan ICD Loader
@@ -343,7 +341,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2025-04-18 10:00:56] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2m[2025-04-19 19:49:49][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

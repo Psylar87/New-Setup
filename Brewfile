@@ -233,7 +233,7 @@ cask "cyberduck"
 # Virtual monitor for screen sharing
 cask "deskpad"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Productivity app
 cask "dropzone"
 # Desktop client for Ente Auth
@@ -255,7 +255,7 @@ cask "google-chrome"
 # Tools to protect your emails and files
 cask "gpg-suite"
 # Open-source video transcoder
-cask "handbrake"
+cask "handbrake-app"
 # Keyboard shortcuts for every button on your screen
 cask "homerow"
 # Block nags to accept cookies and privacy invasive tracking in Safari
@@ -309,7 +309,7 @@ cask "spotify"
 # System monitor for the menu bar
 cask "stats"
 # Mesh VPN based on WireGuard
-cask "tailscale"
+cask "tailscale-app"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Unpacks archive files
@@ -340,7 +340,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2025-06-23 00:01:04] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-06-24 00:00:49] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

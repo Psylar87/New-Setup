@@ -34,7 +34,7 @@ fi
 last_change_timestamp=$(cat "$TIMESTAMP_FILE")
 
 # Get path of current desktop wallpaper using osascript
-wallpaper_path=$(osascript -e 'tell application "System Events" to tell current desktop to get picture' 2>/dev/null)
+wallpaper_path=$(osascript -e 'tell application "System Events" to get picture of current desktop' 2>/dev/null)
 
 if [ -z "$wallpaper_path" ]; then
     echo "No wallpaper change detected."

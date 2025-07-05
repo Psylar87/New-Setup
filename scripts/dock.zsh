@@ -1,44 +1,54 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
-# Script to manage the dock on macOS using defaults & dockutil
-# https://github.com/kcrawford/dockutil
+set -euo pipefail
 
-# set dock size
-defaults write com.apple.dock "tilesize" -int "40"
-# set show recent apps
-defaults write com.apple.dock "show-recents" -bool "false"
+echo "Starting dock setup..."
 
-# check if dockutil is installed
-# this should be installed via homebrew during 
-# the setup-machine script. Which will also call this script.
-if ! command -v dockutil &> /dev/null
-then
-    echo "dockutil could not be found"
-    # Install dockutil
-    if command -v brew &> /dev/null
-    then
-        brew install dockutil
-        echo "dockutil installed"
-    else
-        echo "Homebrew is not installed. Please install Homebrew first."
-        exit 1
-    fi
+# Set dock size and recent apps setting
+defaults write com.apple.dock "tilesize" -int 40
+defaults write com.apple.dock "show-recents" -bool false
+
+# Check for Homebrew first
+if ! command -v brew &> /dev/null; then
+  echo "Homebrew is not installed. Please install Homebrew first."
+  exit 1
 fi
 
-# Setup dock
-# this will remove all dock items and prevent Killall Dock
-dockutil --remove all --no-restart
-# Start adding items
-dockutil --add  /Applications/Zen\ Browser.app --position 1 --no-restart
-dockutil --add  /Applications/Spotify.app --position 2 --no-restart
-dockutil --add  /System/Applications/Messages.app --position 3 --no-restart
-dockutil --add  /Applications/Messenger.app --position 4 --no-restart
-dockutil --add  /Applications/Signal.app --position 5 --no-restart
-dockutil --add  /Applications/Proton\ Mail.app --position 6 --no-restart
-dockutil --add  /Applications/Zed.app --position 7 --no-restart
+# Check for dockutil and install if missing
+if ! command -v dockutil &> /dev/null; then
+  echo "dockutil not found. Installing via Homebrew..."
+  brew install dockutil || { echo "Failed to install dockutil"; exit 1; }
+  echo "dockutil installed."
+fi
 
-# Add folder/directory as stack
-dockutil --add '~/Downloads' --view grid --display folder --allhomes --no-restart
+# Define apps and their positions in an array of tuples
+typeset -a dock_items=(
+  "/Applications/Zen Browser.app:1"
+  "/Applications/Spotify.app:2"
+  "/System/Applications/Messages.app:3"
+  "/Applications/Messenger.app:4"
+  "/Applications/Signal.app:5"
+  "/Applications/Proton Mail.app:6"
+  "/Applications/Zed.app:7"
+)
+
+# Remove all existing dock items without restarting dock yet
+dockutil --remove all --no-restart
+
+# Add apps to dock
+for item in "${dock_items[@]}"; do
+  IFS=":" read -r app_path position <<< "$item"
+  echo "Adding $app_path at position $position"
+  dockutil --add "$app_path" --position "$position" --no-restart || { echo "Failed to add $app_path"; exit 1; }
+done
+
+# Add Downloads folder as a folder icon (not a stack)
+downloads_path="$HOME/Downloads"
+echo "Adding Downloads folder as folder icon"
+dockutil --add "$downloads_path" --display folder --allhomes --no-restart || { echo "Failed to add Downloads folder"; exit 1; }
 
 # Restart dock to apply changes
+echo "Restarting Dock..."
 killall Dock
+
+echo "Dock setup complete."

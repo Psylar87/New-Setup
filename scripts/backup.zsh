@@ -71,6 +71,9 @@ $HOMEBREW_PATH/brew upgrade && brew upgrade --cask
 # Prune all cached downloads and remove all old versions of installed formulae and casks
 $HOMEBREW_PATH/brew cleanup --prune=all
 
+# Update Spicetify configuration and apply changes
+spicetify update
+
 # Run the brew bundle dump
 $HOMEBREW_PATH/brew bundle dump --describe --force
 

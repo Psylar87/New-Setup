@@ -1,23 +1,22 @@
 tap "enigmaticdb/super-secret-tap"
-tap "finnvoor/tools"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@3"
-# Library for command-line editing
-brew "readline"
 # ARP scanning and fingerprinting tool
 brew "arp-scan"
 # YAML Parser
 brew "libyaml"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@3"
 # Text processor and publishing toolchain for AsciiDoc
 brew "asciidoctor"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
+# Library for command-line editing
+brew "readline"
 # Automatically formats Python code to conform to the PEP 8 style guide
 brew "autopep8"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -200,8 +199,6 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Metal-powered video upscaling
-brew "finnvoor/tools/fx-upscale"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -338,7 +335,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2025-08-01 10:02:09] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-08-03 00:01:39] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

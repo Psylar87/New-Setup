@@ -69,8 +69,6 @@ brew "fd"
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg@6"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -155,6 +153,8 @@ brew "powerlevel10k"
 brew "presenterm"
 # Python Language Server for the Language Server Protocol
 brew "python-lsp-server"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Command-line interface for qBittorrent written in Go
 brew "qbittorrent-cli"
 # Ruby version manager
@@ -241,7 +241,7 @@ cask "font-d2coding-nerd-font"
 cask "font-heavy-data-nerd-font"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-monaspace"
-cask "font-monaspace-nerd-font"
+cask "font-monaspice-nerd-font"
 cask "font-source-code-pro"
 # Free and open-source image editor
 cask "gimp"
@@ -259,6 +259,8 @@ cask "iina"
 cask "iterm2"
 # Jellyfin desktop client
 cask "jellyfin-media-player"
+# Menu bar manager
+cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
 # GPU-based terminal emulator
@@ -334,7 +336,8 @@ mas "Refined GitHub", id: 1519867270
 mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
-vscode "[2025-08-18 00:01:12] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+mas "Xcode", id: 497799835
+vscode "[2m[2025-09-08 16:51:37][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

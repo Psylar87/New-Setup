@@ -183,6 +183,8 @@ brew "thefuck"
 brew "tmux"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Vulkan Header files and API registry
+brew "vulkan-headers"
 # Vulkan ICD Loader
 brew "vulkan-loader"
 # Internet file retriever
@@ -337,7 +339,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2025-09-17 19:42:41][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2m[2025-09-17 23:36:06][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

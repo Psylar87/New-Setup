@@ -339,7 +339,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2025-09-20 23:49:31][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-09-21 10:01:16] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

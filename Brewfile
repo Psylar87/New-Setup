@@ -97,6 +97,8 @@ brew "gopls"
 brew "gowall"
 # Improved top (interactive process viewer)
 brew "htop"
+# C library for reading, creating, and modifying zip archives
+brew "libzip"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -105,8 +107,6 @@ brew "jq"
 brew "lazygit"
 # Portable Foreign Function Interface library
 brew "libffi"
-# C library for reading, creating, and modifying zip archives
-brew "libzip"
 # Powerful, lightweight programming language
 brew "lua"
 # Package manager for the Lua programming language
@@ -339,7 +339,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2025-10-06 10:01:28] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2025-10-07 00:04:43] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

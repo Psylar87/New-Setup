@@ -65,7 +65,7 @@ brew "eza"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg@6"
@@ -99,9 +99,7 @@ brew "gopls"
 brew "gowall"
 # Improved top (interactive process viewer)
 brew "htop"
-# C library for reading, creating, and modifying zip archives
-brew "libzip"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
@@ -109,6 +107,8 @@ brew "jq"
 brew "lazygit"
 # Portable Foreign Function Interface library
 brew "libffi"
+# C library for reading, creating, and modifying zip archives
+brew "libzip"
 # Powerful, lightweight programming language
 brew "lua"
 # Package manager for the Lua programming language
@@ -341,7 +341,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2026-01-08 17:21:33][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2m[2026-01-19 16:31:41][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

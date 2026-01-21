@@ -293,8 +293,6 @@ cask "proton-drive"
 cask "proton-mail"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
-# Open source virtual/remote desktop application
-cask "rustdesk"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
 # Instant messaging application focusing on security
@@ -341,7 +339,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2026-01-20 10:01:20] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2026-01-21 00:00:59] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

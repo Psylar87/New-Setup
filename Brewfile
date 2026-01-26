@@ -129,6 +129,8 @@ brew "markdownlint-cli2"
 brew "mas"
 # Styled terminal markdown viewer
 brew "mdv"
+# Deep clean and optimize your Mac
+brew "mole"
 # 'traceroute' and 'ping' in a single tool
 brew "mtr"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -249,6 +251,8 @@ cask "font-monaspice-nerd-font"
 cask "font-source-code-pro"
 # Free and open-source image editor
 cask "gimp"
+# Web browser
+cask "google-chrome"
 # Tools to protect your emails and files
 cask "gpg-suite"
 # Open-source video transcoder
@@ -339,7 +343,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2026-01-24 10:00:59] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2026-01-26 10:01:02] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

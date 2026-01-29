@@ -175,6 +175,8 @@ brew "rustup"
 brew "serpl"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
+# Command-line interface for https://speedtest.net bandwidth tests
+brew "speedtest-cli"
 # Command-line tool to customize Spotify client
 brew "spicetify-cli"
 # Cross-shell prompt for astronauts
@@ -343,7 +345,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2026-01-28 10:00:54] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2026-01-29 00:01:31] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

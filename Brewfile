@@ -171,8 +171,12 @@ brew "ruby-install"
 brew "rust"
 # Rust toolchain installer
 brew "rustup"
+# Small man page generator
+brew "scdoc"
 # Simple terminal UI for search and replace
 brew "serpl"
+# Autoformat shell script source code
+brew "shfmt"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
@@ -345,7 +349,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2026-02-12 00:01:44] info searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2026-02-14 00:01:17] info searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

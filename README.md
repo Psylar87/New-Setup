@@ -1,5 +1,3 @@
-# Stolen from MillerApps
-
 # New Machine Setup
 > Note: For anyone suggesting to use Ansible, this setup works for my needs. I don't require all the options provided by Ansible, nor do I want to do the extra setup.
 

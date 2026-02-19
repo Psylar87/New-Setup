@@ -226,10 +226,6 @@ cask "aldente"
 cask "alt-tab"
 # Application uninstaller
 cask "appcleaner"
-# Chromium based browser
-cask "arc"
-# Menu bar icon organiser
-cask "bartender"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
 # Anthropic's official Claude AI desktop app
@@ -270,16 +266,12 @@ cask "homerow"
 cask "hush"
 # Free and open-source media player
 cask "iina"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Jellyfin desktop client
 cask "jellyfin-media-player"
 # Menu bar manager
 cask "jordanbaird-ice"
 # Keyboard customiser
 cask "karabiner-elements"
-# GPU-based terminal emulator
-cask "kitty"
 # Utility that shows the latest app updates
 cask "latest"
 # Custom Discord client
@@ -322,14 +314,8 @@ cask "steam"
 cask "surge-downloader/tap/surge"
 # Mesh VPN based on WireGuard
 cask "tailscale-app"
-# Messaging app with a focus on speed and security
-cask "telegram"
 # Unpacks archive files
 cask "the-unarchiver"
-# Web browser focusing on security
-cask "tor-browser"
-# Open-source code editor
-cask "visual-studio-code"
 # Terminal emulator
 cask "wave"
 # Multiplayer code editor
@@ -354,7 +340,7 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2m[2026-02-18 18:33:14][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
+vscode "[2m[2026-02-18 23:04:47][0m [35minfo[0m searching for installations on your machine, this is done once and will take about 10 seconds..."
 vscode "no installation of code oss was found."
 vscode ""
 vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"

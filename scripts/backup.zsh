@@ -44,9 +44,9 @@ echo "Running brew doctor..."
 brew doctor || true
 
 echo "Updating Homebrew..."
-brew update
-brew upgrade && brew upgrade --cask
-brew cleanup --prune=all
+brew update || true
+brew upgrade && brew upgrade --cask || true
+brew cleanup --prune=all || true
 
 echo "Updating Spicetify..."
 spicetify update || true

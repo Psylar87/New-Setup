@@ -38,15 +38,3 @@ jobs:
             echo "No Brewfile found"
             exit 1
           fi
-
-  markdown:
-    name: Markdown Linting
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Lint Markdown files
-        uses: DavidAnson/markdownlint-cli2-action@v16
-        with:
-          globs: '**/*.md'

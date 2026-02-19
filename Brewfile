@@ -73,8 +73,6 @@ brew "fastfetch"
 brew "fd"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
-# Play, record, convert, and stream audio and video
-brew "ffmpeg@6"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -343,10 +341,6 @@ mas "Solitaire Epic", id: 972224785
 mas "TestFlight", id: 899247664
 mas "Transmit", id: 1436522307
 mas "Xcode", id: 497799835
-vscode "[2026-02-19 10:01:00] info searching for installations on your machine, this is done once and will take about 10 seconds..."
-vscode "no installation of code oss was found."
-vscode ""
-vscode "if you already installed code and we didn't detect it, run `code version use oss --install-dir /path/to/installation`"
 go "github.com/arsham/figurine"
 go "golang.org/x/tools/gopls"
 go "honnef.co/go/tools/cmd/staticcheck"

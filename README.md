@@ -15,7 +15,7 @@ Steps to make a new machine easier to setup
 4. The same can be for the backup script `chmod u+x backup.zsh`
    Then with the backup script you add it as a cron job.
    
-## Insatll HomeBrew
+## Install HomeBrew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ## Add brew to PATH for zsh
@@ -26,12 +26,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 ### Then pass in the Brewfile location...
 ```
-brew bundle --file [clone loaction]/Brewfile
+brew bundle --file [clone location]/Brewfile
 ```
 
 ### ...or move to the directory first.
 ```
-cd [clone loaction] && brew bundle
+cd [clone location] && brew bundle
 ```
 
 ## Restore App settings, .zshrc, & .gitconfig using Mackup

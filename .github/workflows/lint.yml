@@ -7,19 +7,19 @@ on:
     branches: [main]
 
 jobs:
-  shellcheck:
-    name: Shell Script Linting
-    runs-on: ubuntu-latest
+  zsh-lint:
+    name: Zsh Script Syntax Check
+    runs-on: macos-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run ShellCheck
-        uses: ludeeus/action-shellcheck@master
-        with:
-          scandir: './scripts'
-          severity: error
-          format: gcc
+      - name: Check zsh syntax
+        run: |
+          for file in scripts/*.zsh; do
+            echo "Checking $file..."
+            zsh -n "$file"
+          done
 
   brewfile:
     name: Brewfile Validation

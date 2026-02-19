@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -euo pipefail
+set -u
 
 SCRIPT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 WALLPAPER_BACKUP_DIR="${SCRIPT_DIR}"
@@ -19,7 +19,7 @@ if [ ! -f "$TIMESTAMP_FILE" ]; then
     touch "$TIMESTAMP_FILE"
     echo "0" > "$TIMESTAMP_FILE"
     git add "$TIMESTAMP_FILE"
-    git commit -m "Create timestamp file for wallpaper changes"
+    git commit -m "Create timestamp file for wallpaper changes" || true
 fi
 
 last_change_timestamp=$(cat "$TIMESTAMP_FILE")
@@ -45,20 +45,21 @@ brew doctor || true
 
 echo "Updating Homebrew..."
 brew update || true
-brew upgrade && brew upgrade --cask || true
+brew upgrade || true
+brew upgrade --cask || true
 brew cleanup --prune=all || true
 
 echo "Updating Spicetify..."
 spicetify update || true
 
 echo "Dumping Brewfile..."
-brew bundle dump --describe --force --file="${SCRIPT_DIR}/Brewfile"
+brew bundle dump --describe --force --file="${SCRIPT_DIR}/Brewfile" || true
 
 echo "Running Mackup backup..."
-mackup backup --force
-mackup uninstall --force
+mackup backup --force || true
+mackup uninstall --force || true
 
-if git status --porcelain | grep .; then
+if git status --porcelain | grep -q .; then
     git add .
     git commit -m "chore(backup): Auto update"
     git push

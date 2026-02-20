@@ -40,6 +40,23 @@ else
 fi
 
 echo ""
+echo "Would you like to install Mac App Store apps now? (y/n): "
+read MAS_REPLY
+echo ""
+
+if [[ $MAS_REPLY =~ ^[Yy]es$ ]] || [[ $MAS_REPLY =~ ^[Yy]$ ]]; then
+    MASFILE_PATH="${SCRIPT_DIR}/Brewfile.mas"
+    if [[ -f "$MASFILE_PATH" ]]; then
+        echo "Installing Mac App Store apps..."
+        brew bundle --file "$MASFILE_PATH"
+    else
+        echo "Warning: Brewfile.mas not found at $MASFILE_PATH, skipping..."
+    fi
+else
+    echo "Skipping Mac App Store apps. Run 'brew bundle --file ~/New-Setup/Brewfile.mas' later to install them."
+fi
+
+echo ""
 echo "Would you like to configure Mackup for syncing application settings? (y/n): "
 read MACKUP_REPLY
 echo ""
@@ -88,7 +105,7 @@ else
 fi
 
 echo "Customizing macOS defaults..."
-defaults write -g AppleInterfaceStyle -string "Dark" 2>/dev/null && echo "Dark mode enabled (requires logout to take effect)" || echo "Warning: Could not set dark mode"
+defaults write -g AppleInterfaceStyle -string "Dark" 2>/dev/null && killall SystemUIServer 2>/dev/null && echo "Dark mode enabled" || echo "Warning: Could not set dark mode"
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 defaults write NSGlobalDomain com.apple.mouse.scaling -float "2.5"
 defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -int "0" 2>/dev/null || true
@@ -121,6 +138,8 @@ tell application "System Events"
     end repeat
 end tell
 EOF
+    killall Dock 2>/dev/null || true
+    echo "Wallpaper set successfully"
 else
     echo "Warning: Wallpaper not found at $IMAGE_PATH, skipping..."
 fi

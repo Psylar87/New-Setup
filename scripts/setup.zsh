@@ -88,7 +88,7 @@ else
 fi
 
 echo "Customizing macOS defaults..."
-osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true' 2>/dev/null || echo "Warning: Could not set dark mode"
+defaults write -g AppleInterfaceStyle -string "Dark" 2>/dev/null && echo "Dark mode enabled (requires logout to take effect)" || echo "Warning: Could not set dark mode"
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 defaults write NSGlobalDomain com.apple.mouse.scaling -float "2.5"
 defaults write com.apple.AppleMultitouchTrackpad "FirstClickThreshold" -int "0" 2>/dev/null || true
@@ -111,12 +111,12 @@ echo "Setting desktop wallpaper..."
 IMAGE_PATH="${SCRIPT_DIR}/Desktop.png"
 
 if [[ -f "$IMAGE_PATH" ]]; then
-    osascript <<EOF
+    osascript -e "tell application \"System Events\" to tell every desktop to set picture to POSIX file \"$IMAGE_PATH\"" 2>/dev/null || osascript <<EOF
 tell application "System Events"
     set desktopCount to count of desktops
     repeat with desktopNumber from 1 to desktopCount
         tell desktop desktopNumber
-            set picture to "$IMAGE_PATH"
+            set picture to POSIX file "$IMAGE_PATH"
         end tell
     end repeat
 end tell

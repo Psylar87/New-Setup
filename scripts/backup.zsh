@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-set -u
+set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 WALLPAPER_BACKUP_DIR="${SCRIPT_DIR}"
@@ -15,7 +15,7 @@ echo "Script started at $(date)"
 
 cd "$SCRIPT_DIR"
 
-if [ ! -f "$TIMESTAMP_FILE" ]; then
+if [[ ! -f "$TIMESTAMP_FILE" ]]; then
     touch "$TIMESTAMP_FILE"
     echo "0" > "$TIMESTAMP_FILE"
     git add "$TIMESTAMP_FILE"
@@ -25,13 +25,13 @@ fi
 last_change_timestamp=$(cat "$TIMESTAMP_FILE")
 wallpaper_path=$(osascript -e 'tell application "System Events" to get picture of current desktop' 2>/dev/null || echo "")
 
-if [ -z "$wallpaper_path" ]; then
+if [[ -z "$wallpaper_path" ]]; then
     echo "No wallpaper change detected."
 else
     echo "Wallpaper path: $wallpaper_path"
     current_timestamp=$(stat -f "%m" "$wallpaper_path" 2>/dev/null || echo "0")
 
-    if [ "$last_change_timestamp" != "$current_timestamp" ]; then
+    if [[ "$last_change_timestamp" != "$current_timestamp" ]]; then
         cp "$wallpaper_path" "$WALLPAPER_BACKUP_DIR" || { echo "Failed to copy wallpaper"; exit 1; }
         new_wallpaper_path="${WALLPAPER_BACKUP_DIR}/Desktop.png"
         mv "${WALLPAPER_BACKUP_DIR}/$(basename "$wallpaper_path")" "$new_wallpaper_path" || { echo "Failed to rename wallpaper"; exit 1; }
@@ -54,6 +54,7 @@ spicetify update || true
 
 echo "Dumping Brewfile..."
 brew bundle dump --describe --force --file="${SCRIPT_DIR}/Brewfile" || true
+brew bundle dump --describe --force --mas --file="${SCRIPT_DIR}/Brewfile.mas" || true
 
 echo "Running Mackup backup..."
 mackup backup --force || true

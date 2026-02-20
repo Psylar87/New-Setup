@@ -57,8 +57,8 @@ echo "Updating Spicetify..."
 spicetify update || true
 
 echo "Dumping Brewfile..."
-brew bundle dump --describe --force --file="${SCRIPT_DIR}/Brewfile" || true
-brew bundle dump --describe --force --mas --file="${SCRIPT_DIR}/Brewfile.mas" || true
+brew bundle dump --describe --force --no-mas --file="${SCRIPT_DIR}/Brewfile" 2>/dev/null || true
+brew bundle dump --describe --force --mas --file="${SCRIPT_DIR}/Brewfile.mas" 2>/dev/null || true
 
 echo "Running Mackup backup..."
 mackup backup --force || true

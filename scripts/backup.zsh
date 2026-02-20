@@ -32,11 +32,15 @@ else
     current_timestamp=$(stat -f "%m" "$wallpaper_path" 2>/dev/null || echo "0")
 
     if [[ "$last_change_timestamp" != "$current_timestamp" ]]; then
-        cp "$wallpaper_path" "$WALLPAPER_BACKUP_DIR" || { echo "Failed to copy wallpaper"; exit 1; }
-        new_wallpaper_path="${WALLPAPER_BACKUP_DIR}/Desktop.png"
-        mv "${WALLPAPER_BACKUP_DIR}/$(basename "$wallpaper_path")" "$new_wallpaper_path" || { echo "Failed to rename wallpaper"; exit 1; }
-        echo "$current_timestamp" > "$TIMESTAMP_FILE"
-        git add "$new_wallpaper_path"
+        if [[ "$wallpaper_path" == "${WALLPAPER_BACKUP_DIR}/Desktop.png" ]]; then
+            echo "Wallpaper already backed up, skipping..."
+        else
+            cp "$wallpaper_path" "$WALLPAPER_BACKUP_DIR" || { echo "Failed to copy wallpaper"; exit 1; }
+            new_wallpaper_path="${WALLPAPER_BACKUP_DIR}/Desktop.png"
+            mv "${WALLPAPER_BACKUP_DIR}/$(basename "$wallpaper_path")" "$new_wallpaper_path" || { echo "Failed to rename wallpaper"; exit 1; }
+            echo "$current_timestamp" > "$TIMESTAMP_FILE"
+            git add "$new_wallpaper_path"
+        fi
     fi
 fi
 

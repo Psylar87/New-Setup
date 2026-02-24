@@ -303,6 +303,8 @@ cask "orion"
 cask "proton-drive"
 # Client for Proton Mail and Proton Calendar
 cask "proton-mail"
+# Desktop client for Proton Pass
+cask "proton-pass"
 # Peer to peer Bitorrent client
 cask "qbittorrent"
 # Tool that provides consistent, highly configurable symbols for apps

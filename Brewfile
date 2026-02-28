@@ -1,5 +1,6 @@
 tap "anomalyco/tap"
 tap "enigmaticdb/super-secret-tap"
+tap "gromgit/brewtils"
 tap "surge-downloader/tap"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
@@ -223,6 +224,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # The AI coding agent built for the terminal.
 brew "anomalyco/tap/opencode"
+# Interactive TUI for Homebrew
+brew "gromgit/brewtils/taproom"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password

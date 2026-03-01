@@ -106,6 +106,8 @@ brew "gopls"
 brew "gowall"
 # Improved top (interactive process viewer)
 brew "htop"
+# Configurable static site generator
+brew "hugo"
 # Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -236,6 +238,8 @@ cask "aldente"
 cask "alt-tab"
 # Application uninstaller
 cask "appcleaner"
+# Chromium based browser
+cask "arc"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
 # Anthropic's official Claude AI desktop app

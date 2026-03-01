@@ -238,8 +238,6 @@ cask "aldente"
 cask "alt-tab"
 # Application uninstaller
 cask "appcleaner"
-# Chromium based browser
-cask "arc"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
 # Anthropic's official Claude AI desktop app

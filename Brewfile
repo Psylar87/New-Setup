@@ -320,6 +320,8 @@ cask "sf-symbols"
 cask "signal"
 # Team communication and collaboration software
 cask "slack"
+# Per-app audio controls
+cask "sound-control"
 # Music streaming service
 cask "spotify"
 # System monitor for the menu bar

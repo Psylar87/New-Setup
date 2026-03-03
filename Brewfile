@@ -330,8 +330,6 @@ cask "stats"
 cask "steam"
 # Blazing fast TUI download manager built in Go for power users
 cask "surge-downloader/tap/surge"
-# Mesh VPN based on WireGuard
-cask "tailscale-app"
 # Unpacks archive files
 cask "the-unarchiver"
 # Virtual machines UI using QEMU

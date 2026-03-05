@@ -100,6 +100,8 @@ brew "glow"
 brew "go"
 # Directory/file & DNS busting tool written in Go
 brew "gobuster"
+# Fast linters runner for Go
+brew "golangci-lint"
 # Language server for the Go language
 brew "gopls"
 # Tool to convert a Wallpaper's color scheme / palette

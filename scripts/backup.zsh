@@ -5,6 +5,9 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 WALLPAPER_BACKUP_DIR="${SCRIPT_DIR}"
 TIMESTAMP_FILE="${SCRIPT_DIR}/last_wallpaper_change.txt"
+BACKUP_BRANCH="${BACKUP_BRANCH:-main}"
+REQUIRE_BACKUP_BRANCH="${REQUIRE_BACKUP_BRANCH:-true}"
+AUTO_PUSH="${AUTO_PUSH:-true}"
 
 HOMEBREW_PATH="/opt/homebrew/bin"
 HOMEBREW_SBIN="/opt/homebrew/sbin"
@@ -18,8 +21,6 @@ cd "$SCRIPT_DIR"
 if [[ ! -f "$TIMESTAMP_FILE" ]]; then
     touch "$TIMESTAMP_FILE"
     echo "0" > "$TIMESTAMP_FILE"
-    git add "$TIMESTAMP_FILE"
-    git commit -m "Create timestamp file for wallpaper changes" || true
 fi
 
 last_change_timestamp=$(cat "$TIMESTAMP_FILE")
@@ -35,11 +36,9 @@ else
         if [[ "$wallpaper_path" == "${WALLPAPER_BACKUP_DIR}/Desktop.png" ]]; then
             echo "Wallpaper already backed up, skipping..."
         else
-            cp "$wallpaper_path" "$WALLPAPER_BACKUP_DIR" || { echo "Failed to copy wallpaper"; exit 1; }
             new_wallpaper_path="${WALLPAPER_BACKUP_DIR}/Desktop.png"
-            mv "${WALLPAPER_BACKUP_DIR}/$(basename "$wallpaper_path")" "$new_wallpaper_path" || { echo "Failed to rename wallpaper"; exit 1; }
+            cp "$wallpaper_path" "$new_wallpaper_path" || { echo "Failed to copy wallpaper"; exit 1; }
             echo "$current_timestamp" > "$TIMESTAMP_FILE"
-            git add "$new_wallpaper_path"
         fi
     fi
 fi
@@ -69,12 +68,47 @@ echo "Running Mackup backup..."
 mackup backup --force || true
 mackup uninstall --force || true
 
-if git status --porcelain | grep -q .; then
-    git add .
-    git commit -m "chore(backup): Auto update"
-    git push
+if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+    current_branch=$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "")
+
+    if [[ "$REQUIRE_BACKUP_BRANCH" == "true" ]] && [[ "$current_branch" != "$BACKUP_BRANCH" ]]; then
+        echo "Skipping git commit/push: current branch '$current_branch' is not backup branch '$BACKUP_BRANCH'"
+    else
+        typeset -a managed_files=(
+            "$TIMESTAMP_FILE"
+            "${SCRIPT_DIR}/Desktop.png"
+            "${SCRIPT_DIR}/Brewfile"
+            "${SCRIPT_DIR}/Brewfile.mas"
+            "${SCRIPT_DIR}/scripts/backup.zsh"
+            "${SCRIPT_DIR}/scripts/setup.zsh"
+            "${SCRIPT_DIR}/scripts/dock.zsh"
+            "${SCRIPT_DIR}/scripts/.gitignore"
+        )
+
+        for managed_file in "${managed_files[@]}"; do
+            if [[ -f "$managed_file" ]]; then
+                git add "$managed_file"
+            fi
+        done
+
+        if ! git diff --cached --quiet; then
+            git commit -m "chore(backup): Auto update"
+        else
+            echo "No managed backup files changed"
+        fi
+
+        if [[ "$AUTO_PUSH" == "true" ]]; then
+            if git rev-parse --abbrev-ref --symbolic-full-name '@{u}' >/dev/null 2>&1; then
+                git push
+            else
+                echo "No upstream configured; skipping push"
+            fi
+        else
+            echo "AUTO_PUSH is false; skipping push"
+        fi
+    fi
 else
-    echo "No changes to commit"
+    echo "Not inside a git repository; skipping commit and push"
 fi
 
 echo "Backup complete!"

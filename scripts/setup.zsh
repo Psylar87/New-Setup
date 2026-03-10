@@ -32,6 +32,7 @@ else
 fi
 
 BREWFILE_PATH="${SCRIPT_DIR}/Brewfile"
+MASFILE_PATH="${SCRIPT_DIR}/Brewfile.mas"
 if [[ -f "$BREWFILE_PATH" ]]; then
     echo "Installing applications from Brewfile..."
     brew bundle --file "$BREWFILE_PATH"
@@ -45,7 +46,6 @@ read MAS_REPLY
 echo ""
 
 if [[ $MAS_REPLY =~ ^[Yy]es$ ]] || [[ $MAS_REPLY =~ ^[Yy]$ ]]; then
-    MASFILE_PATH="${SCRIPT_DIR}/Brewfile.mas"
     if [[ -f "$MASFILE_PATH" ]]; then
         echo "Installing Mac App Store apps..."
         brew bundle --file "$MASFILE_PATH"
@@ -53,7 +53,7 @@ if [[ $MAS_REPLY =~ ^[Yy]es$ ]] || [[ $MAS_REPLY =~ ^[Yy]$ ]]; then
         echo "Warning: Brewfile.mas not found at $MASFILE_PATH, skipping..."
     fi
 else
-    echo "Skipping Mac App Store apps. Run 'brew bundle --file ~/New-Setup/Brewfile.mas' later to install them."
+    echo "Skipping Mac App Store apps. Run 'brew bundle --file $MASFILE_PATH' later to install them."
 fi
 
 echo ""
@@ -154,10 +154,14 @@ if [[ -f "/usr/lib/pam/pam_tid.so" ]] && system_profiler SPiBridgeDataType 2>/de
     echo ""
     
     if [[ $REPLY =~ ^[Yy]es$ ]] || [[ $REPLY =~ ^[Yy]$ ]]; then
-        echo "Enabling Touch ID for sudo in terminal"
-        echo "A backup of the original file will be created at $SUDO_PATH.bak"
-        sudo sed -i.bak '2s;^;auth       sufficient    pam_tid.so\n;' "$SUDO_PATH" || echo "Warning: Failed to configure Touch ID for sudo"
-        echo "Touch ID for sudo in terminal enabled"
+        if grep -qE '^auth[[:space:]]+sufficient[[:space:]]+pam_tid\.so' "$SUDO_PATH"; then
+            echo "Touch ID for sudo in terminal is already enabled"
+        else
+            echo "Enabling Touch ID for sudo in terminal"
+            echo "A backup of the original file will be created at $SUDO_PATH.bak"
+            sudo sed -i.bak '2s;^;auth       sufficient    pam_tid.so\n;' "$SUDO_PATH" || echo "Warning: Failed to configure Touch ID for sudo"
+            echo "Touch ID for sudo in terminal enabled"
+        fi
     else
         echo "Touch ID for sudo in terminal was not enabled"
     fi

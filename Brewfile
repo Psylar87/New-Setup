@@ -2,6 +2,7 @@ tap "anomalyco/tap"
 tap "enigmaticdb/super-secret-tap"
 tap "gromgit/brewtils"
 tap "surge-downloader/tap"
+tap "theboredteam/boring-notch"
 # Performance-portable, length-agnostic SIMD with runtime dispatch
 brew "highway"
 # General-purpose data compression with high compression ratio
@@ -242,6 +243,8 @@ cask "alt-tab"
 cask "appcleaner"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
+# Not so boring notch That Rocks 🎸🎶 
+cask "theboredteam/boring-notch/boring-notch"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Tool to remove unnecessary files and folders from disk

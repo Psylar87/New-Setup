@@ -121,6 +121,8 @@ brew "lazygit"
 brew "libffi"
 # C library for reading, creating, and modifying zip archives
 brew "libzip"
+# Simple markdown translator
+brew "lowdown"
 # Powerful, lightweight programming language
 brew "lua"
 # Package manager for the Lua programming language

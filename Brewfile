@@ -21,6 +21,8 @@ brew "atuin"
 brew "automake"
 # Library for command-line editing
 brew "readline"
+# Command-line interface for SQLite
+brew "sqlite"
 # Automatically formats Python code to conform to the PEP 8 style guide
 brew "autopep8"
 # Bourne-Again SHell, a UNIX command interpreter

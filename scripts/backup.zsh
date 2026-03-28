@@ -70,7 +70,7 @@ if [[ ! -f "${WALLPAPER_STATE_FILE}" ]]; then
     : > "${WALLPAPER_STATE_FILE}"
 fi
 
-# -------- Wallpaper backup (force PNG) --------
+# -------- Wallpaper backup (force PNG, atomic + validated) --------
 wallpaper_path="$(osascript -e 'tell application "System Events" to get picture of current desktop' 2>/dev/null || true)"
 
 if [[ -z "${wallpaper_path}" || ! -f "${wallpaper_path}" ]]; then
@@ -87,10 +87,20 @@ else
             echo "${current_state}" > "${WALLPAPER_STATE_FILE}"
         else
             if command -v sips >/dev/null 2>&1; then
-                if sips -s format png "${wallpaper_path}" --out "${WALLPAPER_BACKUP_FILE}" >/dev/null 2>&1; then
-                    echo "${current_state}" > "${WALLPAPER_STATE_FILE}"
-                    log "Wallpaper converted and backed up to ${WALLPAPER_BACKUP_FILE}"
+                tmp_png="${WALLPAPER_BACKUP_FILE}.tmp"
+
+                if sips -s format png "${wallpaper_path}" --out "${tmp_png}" >/dev/null 2>&1; then
+                    if file "${tmp_png}" | grep -q "PNG image data"; then
+                        mv -f "${tmp_png}" "${WALLPAPER_BACKUP_FILE}"
+                        echo "${current_state}" > "${WALLPAPER_STATE_FILE}"
+                        log "Wallpaper converted and backed up to ${WALLPAPER_BACKUP_FILE}"
+                    else
+                        rm -f "${tmp_png}"
+                        warn "Converted file is not valid PNG"
+                        exit 1
+                    fi
                 else
+                    rm -f "${tmp_png}" 2>/dev/null || true
                     warn "Failed to convert wallpaper to PNG"
                     exit 1
                 fi
@@ -143,7 +153,7 @@ else
     log "Skipping Mackup uninstall (KEEP_MACKUP_UNINSTALL=false)"
 fi
 
-# -------- Git commit/push (main only) --------
+# -------- Git commit/push --------
 if git rev-parse --is-inside-work-tree >/dev/null 2>&1; then
     current_branch="$(git rev-parse --abbrev-ref HEAD 2>/dev/null || echo "")"
 

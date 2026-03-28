@@ -200,7 +200,7 @@ brew "sl"
 # Command-line interface for https://speedtest.net bandwidth tests
 brew "speedtest-cli"
 # Command-line tool to customize Spotify client
-brew "spicetify-cli"
+brew "spicetify-cli", link: false
 # Cross-shell prompt for astronauts
 brew "starship"
 # Opinionated Lua code formatter

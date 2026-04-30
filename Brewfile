@@ -300,7 +300,7 @@ cask "latest"
 # Custom Discord client
 cask "legcord"
 # App to manage software development and track bugs
-cask "linear-linear"
+cask "linear"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Web browser focused on privacy and on minimizing tracking and fingerprinting
@@ -313,6 +313,8 @@ cask "notesnook"
 cask "obsidian"
 # Get up and running with large language models locally
 cask "ollama-app"
+# Verify system files structure, run miscellaneous maintenance and more
+cask "onyx"
 # WebKit based web browser
 cask "orion"
 # Client for Proton Drive

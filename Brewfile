@@ -279,6 +279,8 @@ cask "font-monaspice-nerd-font"
 cask "font-source-code-pro"
 # Free and open-source image editor
 cask "gimp"
+# Web browser
+cask "google-chrome"
 # Tools to protect your emails and files
 cask "gpg-suite"
 # Open-source video transcoder

@@ -3,10 +3,6 @@ tap "enigmaticdb/super-secret-tap"
 tap "gromgit/brewtils"
 tap "surge-downloader/tap"
 tap "theboredteam/boring-notch"
-# Performance-portable, length-agnostic SIMD with runtime dispatch
-brew "highway"
-# General-purpose data compression with high compression ratio
-brew "xz"
 # ARP scanning and fingerprinting tool
 brew "arp-scan"
 # YAML Parser
@@ -23,6 +19,8 @@ brew "automake"
 brew "readline"
 # Command-line interface for SQLite
 brew "sqlite"
+# General-purpose data compression with high compression ratio
+brew "xz"
 # Automatically formats Python code to conform to the PEP 8 style guide
 brew "autopep8"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -43,6 +41,8 @@ brew "btop"
 brew "libnghttp2"
 # Emacs dependency management
 brew "cask"
+# Performance-portable, length-agnostic SIMD with runtime dispatch
+brew "highway"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Ruby environment tool

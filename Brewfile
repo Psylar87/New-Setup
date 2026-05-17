@@ -1,6 +1,7 @@
 tap "anomalyco/tap"
 tap "enigmaticdb/super-secret-tap"
 tap "gromgit/brewtils"
+tap "homebrew/core"
 tap "surge-downloader/tap"
 tap "theboredteam/boring-notch"
 # ARP scanning and fingerprinting tool
@@ -197,10 +198,8 @@ brew "serpl"
 brew "shfmt"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
-# Command-line interface for https://speedtest.net bandwidth tests
-brew "speedtest-cli"
 # Command-line tool to customize Spotify client
-brew "spicetify-cli", link: false
+brew "spicetify-cli"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Opinionated Lua code formatter

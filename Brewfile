@@ -72,6 +72,8 @@ brew "duti"
 brew "exercism"
 # Modern, maintained replacement for ls
 brew "eza"
+# Powerful, lightweight programming language
+brew "lua"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
@@ -126,8 +128,6 @@ brew "libffi"
 brew "libzip"
 # Simple markdown translator
 brew "lowdown"
-# Powerful, lightweight programming language
-brew "lua"
 # Package manager for the Lua programming language
 brew "luarocks"
 # LZMA-based compression program similar to gzip or bzip2

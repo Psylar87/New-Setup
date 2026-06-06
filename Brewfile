@@ -59,7 +59,7 @@ brew "colima"
 # Apjanke's fork of the classic cowsay project
 brew "cowsay"
 # Pack, ship and run any application as a lightweight container
-brew "docker", link: false
+brew "docker"
 # Tool for managing dock items
 brew "dockutil"
 # Command-line DNS Client for Humans

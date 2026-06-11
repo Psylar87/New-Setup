@@ -242,6 +242,8 @@ cask "alt-tab"
 cask "appcleaner"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
+# Not so boring notch That Rocks 🎸🎶 
+cask "theboredteam/boring-notch/boring-notch"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Tool to remove unnecessary files and folders from disk
@@ -334,6 +336,8 @@ cask "spotify"
 cask "stats"
 # Video game digital distribution service
 cask "steam"
+# Blazing fast TUI download manager built in Go for power users
+cask "surge-downloader/tap/surge"
 # Unpacks archive files
 cask "the-unarchiver"
 # Virtual machines UI using QEMU

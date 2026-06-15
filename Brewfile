@@ -2,7 +2,7 @@ tap "anomalyco/tap"
 tap "enigmaticdb/super-secret-tap"
 tap "gromgit/brewtils"
 tap "homebrew/core"
-tap "surge-downloader/tap"
+tap "surgedm/tap"
 tap "theboredteam/boring-notch"
 # ARP scanning and fingerprinting tool
 brew "arp-scan"
@@ -336,8 +336,8 @@ cask "spotify"
 cask "stats"
 # Video game digital distribution service
 cask "steam"
-# Blazing fast TUI download manager built in Go for power users
-cask "surge-downloader/tap/surge"
+# Network toolbox
+cask "surge"
 # Unpacks archive files
 cask "the-unarchiver"
 # Virtual machines UI using QEMU

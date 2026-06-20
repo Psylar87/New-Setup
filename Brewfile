@@ -2,8 +2,8 @@ tap "anomalyco/tap"
 tap "enigmaticdb/super-secret-tap"
 tap "gromgit/brewtils"
 tap "homebrew/core"
-tap "surgedm/tap"
-tap "theboredteam/boring-notch"
+tap "surgedm/tap", "https://github.com/SurgeDM/homebrew-tap.git"
+tap "theboredteam/boring-notch", "https://github.com/TheBoredTeam/homebrew-boring-notch"
 # ARP scanning and fingerprinting tool
 brew "arp-scan"
 # YAML Parser

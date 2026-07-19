@@ -148,7 +148,7 @@ fi
 # -------- Mackup --------
 run_optional_if_exists mackup "Running Mackup backup" mackup backup --force
 if [[ "${KEEP_MACKUP_UNINSTALL}" == "true" ]]; then
-    run_optional_if_exists mackup "Running Mackup uninstall" mackup uninstall --force
+    run_optional_if_exists mackup "Running Mackup uninstall" mackup link uninstall --force
 else
     log "Skipping Mackup uninstall (KEEP_MACKUP_UNINSTALL=false)"
 fi

@@ -307,8 +307,6 @@ cask "mullvad-vpn"
 cask "notesnook"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Get up and running with large language models locally
-cask "ollama-app"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
 # WebKit based web browser

@@ -230,10 +230,6 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# The AI coding agent built for the terminal.
-brew "anomalyco/tap/opencode"
-# Interactive TUI for Homebrew
-brew "gromgit/brewtils/taproom"
 # Password manager that keeps all passwords secure behind one password
 cask "1password"
 # Command-line interface for 1Password
@@ -246,8 +242,7 @@ cask "alt-tab"
 cask "appcleaner"
 # Utility improving 3rd party mouse performance and functionalities
 cask "bettermouse"
-# Not so boring notch That Rocks 🎸🎶 
-cask "theboredteam/boring-notch/boring-notch"
+cask "boring-notch"
 # Anthropic's official Claude AI desktop app
 cask "claude"
 # Tool to remove unnecessary files and folders from disk

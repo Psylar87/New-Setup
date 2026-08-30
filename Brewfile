@@ -198,8 +198,6 @@ brew "serpl"
 brew "shfmt"
 # Prints a steam locomotive if you type sl instead of ls
 brew "sl"
-# Command-line tool to customize Spotify client
-brew "spicetify-cli"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Opinionated Lua code formatter

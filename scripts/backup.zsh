@@ -127,7 +127,7 @@ run_optional_if_exists spicetify "Updating Spicetify" spicetify update
 # -------- Brewfile export --------
 if command -v brew >/dev/null 2>&1; then
     run_optional "Dumping Brewfile (full temp)" \
-        brew bundle dump --no-describe --force --file="${SCRIPT_DIR}/Brewfile.tmp"
+        brew bundle dump --no-describe --no-vscode --force --file="${SCRIPT_DIR}/Brewfile.tmp"
 
     if [[ -f "${SCRIPT_DIR}/Brewfile.tmp" ]]; then
         grep -v "^mas " "${SCRIPT_DIR}/Brewfile.tmp" | grep -v "^vscode " > "${SCRIPT_DIR}/Brewfile" || true
@@ -135,7 +135,7 @@ if command -v brew >/dev/null 2>&1; then
     fi
 
     run_optional "Dumping Brewfile.mas (temp)" \
-        brew bundle dump --no-describe --force --mas --file="${SCRIPT_DIR}/Brewfile.mas.tmp"
+        brew bundle dump --no-describe --no-vscode --force --mas --file="${SCRIPT_DIR}/Brewfile.mas.tmp"
 
     if [[ -f "${SCRIPT_DIR}/Brewfile.mas.tmp" ]]; then
         grep "^mas " "${SCRIPT_DIR}/Brewfile.mas.tmp" > "${SCRIPT_DIR}/Brewfile.mas" || true
